@@ -5,5 +5,6 @@ void Words(){
 	ñase 0: 
 		cout << "Past Simple V2" << endl << "Arise";
 		word = "Arose"; 
+		Check();
 	}
 }
