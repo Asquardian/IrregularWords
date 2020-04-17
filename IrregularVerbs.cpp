@@ -2,13 +2,12 @@
 #include <cstring>
  
 using namespace std;
- 
+
+string word, str;
 int main()
 {
-	string str, word;
 	cout << "Enter the word: ";
 	cin >> str;
-	word = "Was";
 	if(str == word)
 	cout << "plus 1";
 }
