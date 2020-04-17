@@ -3,11 +3,11 @@
  
 using namespace std;
 
+void Words()
+void Check()
+
 string word, str;
 int main()
 {
-	cout << "Enter the word: ";
-	cin >> str;
-	if(str == word)
-	cout << "plus 1";
+	Words();
 }
