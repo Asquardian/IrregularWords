@@ -1,11 +1,11 @@
 #include "functions.h"
 
-int main()
+void Mode1()
 {	
     int i;
     string word, str;
     cout << "Enter word from a capital letter";
     for (i = 0; i < 100; i++) {
-	Words()
+	Words(i);
 	}
 }

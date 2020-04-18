@@ -1,5 +1,5 @@
 #include <iostream>
 #include <cstring>
 using namespace std; 
-void Check();
-string Words();
+void Mode1();
+string Words(int i);

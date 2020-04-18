@@ -2,6 +2,5 @@
 
 int main()
 {	
-	string word, str;
-	Words();
+	Mode1();
 }
