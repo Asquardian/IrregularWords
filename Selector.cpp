@@ -3,13 +3,15 @@
 int Selector()
 {
     int Selection;
-    cout << "Enter Mode" << endl << "All Include - 1";
+    cout << "Enter Mode" << endl
+         << "All Include - 1" << endl
+         << "Exit - 2" << endl;
     cin >> Selection;
     switch (Selection) {
     case 1:
         Mode1();
         break;
     case 2:
-        return 0;
+        exit(0);
     }
 }
