@@ -6,31 +6,32 @@ void Words(int i)
     case 0:
         cout << "Simple Past (V2) of Arise" << endl;
         Checker("Arose");
-	break;
+        break;
     case 1:
         cout << "Past Particle (V3) of Arise" << endl;
         Checker("Arisen");
-	break;
+        break;
     case 2:
         cout << "Simple Past (V2) of Awake without -ed" << endl;
         Checker("Awoke");
-	break;
+        break;
     case 3:
         cout << "Past Particle (V3) of Awake without -ed" << endl;
         Checker("Awoken");
-	break;
+        break;
     case 4:
         cout << "Simple Past (V2) of Be in singular" << endl;
         Checker("Was");
-	break;
+        break;
     case 5:
         cout << "Simple Past (V2) of Be in plural" << endl;
         Checker("Were");
-	break;
+        break;
     case 6:
         cout << "Past Particle (V3) of Be" << endl;
         Checker("Been");
-	break;
-    default: cout << "Complete!";
+        break;
+    default:
+        cout << "Complete!";
     }
 }
