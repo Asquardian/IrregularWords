@@ -5,10 +5,14 @@ string Words(int i)
     switch (i) {
     case 0:
         cout << "Simple Past (V2) of Arise" << endl;
-	Checker("Arose");
-    }
+        Checker("Arose");
     case 1:
         cout << "Past Particle (V3) of Arise" << endl;
-	Checker("Arisen");
-}
-
+        Checker("Arisen");
+    case 2:
+        cout << "Simple Past (V2) of Awake without -ed" << endl;
+        Checker("Awoke");
+    case 3:
+        cout << "Past Particle (V3) of Awake without -ed" << endl;
+        Checker("Awoken");
+    }
