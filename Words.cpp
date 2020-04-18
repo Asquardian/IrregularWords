@@ -31,6 +31,38 @@ void Words(int i)
         cout << "Past Particle (V3) of Be" << endl;
         Checker("Been");
         break;
+    case 7:
+        cout << "Simple Past (V2) of Become" << endl;
+        Checker("Became");
+        break;
+    case 8:
+        cout << "Past Particle (V3) of Become" << endl;
+        Checker("Become");
+        break;
+    case 9:
+    	cout << "Simple Past (V2) of Begin" << endl;
+        Checker("Began");
+        break;
+    case 10:
+    	cout << "Past Particle (V3) of Begin" << endl;
+        Checker("Begun");
+        break;
+    case 11:
+    	cout << "Simple Past (V2) of Bring" << endl;
+        Checker("Brought");
+        break;
+    case 12:
+    	cout << "Past Particle (V3) of Bring" << endl;
+        Checker("Brought");
+        break;
+    case 13:
+    	cout << "Simple Past (V2) of Build" << endl;
+        Checker("Built");
+        break;
+    case 14:
+    	cout << "Past Particle (V3) of Build" << endl;
+        Checker("Built");
+        break;
     default:
         cout << "Complete!";
     }
