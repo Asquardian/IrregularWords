@@ -63,6 +63,14 @@ void Words(int i)
     	cout << "Past Particle (V3) of Build" << endl;
         Checker("Built");
         break;
+    case 15:
+    	cout << "Simple Past (V2) of Buy" << endl;
+        Checker("Bought");
+        break;
+    case 16:
+    	cout << "Past Particle (V3) of Buy" << endl;
+        Checker("Bought");
+        break;
     default:
         cout << "Complete!";
     }
