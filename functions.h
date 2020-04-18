@@ -1,0 +1,2 @@
+void Check();
+void Words();
