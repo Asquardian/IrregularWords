@@ -1,6 +1,7 @@
 #include "functions.h"
-string word, str;
+
 int main()
-{
+{	
+	string word, str;
 	Words();
 }

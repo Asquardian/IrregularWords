@@ -2,4 +2,4 @@
 #include <cstring>
 using namespace std; 
 void Check();
-void Words();
+string Words();
