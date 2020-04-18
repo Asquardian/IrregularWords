@@ -1,12 +1,6 @@
-#include <iostream>
-#include <cstring>
 #include "functions.h"
- 
-using namespace std;
-
-
+string word, str;
 int main()
 {
-	string word, str;
 	Words();
 }
