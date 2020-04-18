@@ -1,5 +1,5 @@
 #include "functions.h"
-string Words(int i)
+void Words(int i)
 {
     string word;
     switch (i) {
@@ -31,4 +31,6 @@ string Words(int i)
         cout << "Past Particle (V3) of Be" << endl;
         Checker("Been");
 	break;
+    default: cout << "Complete!";
     }
+}
