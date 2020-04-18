@@ -71,6 +71,31 @@ void Words(int i)
     	cout << "Past Particle (V3) of Buy" << endl;
         Checker("Bought");
         break;
+    case 17:
+    	cout << "Simple Past (V2) of Can" << endl;
+        Checker("Could");
+        break;
+    case 18:
+    	cout << "Past Particle (V3) of Can" << endl;
+        Checker("Could");
+        break;
+    case 19:
+    	cout << "Simple Past (V2) of Catch" << endl;
+        Checker("Caught");
+        break;
+    case 20:
+    	cout << "Past Particle (V3) of Catch" << endl;
+        Checker("Caught");
+        break;
+    case 21:
+    	cout << "Simple Past (V2) of Choose" << endl;
+        Checker("Chose");
+        break;
+    case 22:
+    	cout << "Past Particle (V3) of Choose" << endl;
+        Checker("Chosen");
+        break;
+    
     default:
         cout << "Complete!";
     }
