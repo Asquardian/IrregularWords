@@ -95,7 +95,78 @@ void Words(int i)
     	cout << "Past Particle (V3) of Choose" << endl;
         Checker("Chosen");
         break;
-    
+    case 23:
+    	cout << "Simple Past (V2) of Come" << endl;
+        Checker("Came");
+        break;
+    case 24:
+    	cout << "Past Particle (V3) of Come" << endl;
+        Checker("Come");
+        break;
+    case 25:
+    	cout << "Simple Past (V2) of Cost" << endl;
+        Checker("Cost");
+        break;
+    case 26:
+    	cout << "Past Particle (V3) of Cost" << endl;
+        Checker("Cost");
+        break;
+    case 27:
+    	cout << "Simple Past (V2) of Cut" << endl;
+        Checker("Cut");
+        break;
+    case 28:
+    	cout << "Past Particle (V3) of Cut" << endl;
+        Checker("Cut");
+        break;
+    case 29:
+    	cout << "Simple Past (V2) of Do" << endl;
+        Checker("Did");
+        break;
+    case 30:
+    	cout << "Past Particle (V3) of Do" << endl;
+        Checker("Done");
+        break;
+    case 31:
+    	cout << "Simple Past (V2) of Draw" << endl;
+        Checker("Drew");
+        break;
+    case 32:
+    	cout << "Past Particle (V3) of Draw" << endl;
+        Checker("Drawn");
+        break;
+    case 33:
+    	cout << "Simple Past (V2) of Dream without -ed" << endl;
+        Checker("Dreamt");
+        break;
+    case 34:
+    	cout << "Past Particle (V3) of Draw" << endl;
+        Checker("Dreamt");
+        break;
+    case 35:
+    	cout << "Simple Past (V2) of Drink" << endl;
+        Checker("Drank");
+        break;
+    case 36:
+    	cout << "Past Particle (V3) of Drink" << endl;
+        Checker("Drunk");
+        break;
+    case 37:
+    	cout << "Simple Past (V2) of Drive" << endl;
+        Checker("Drove");
+        break;
+    case 38:
+    	cout << "Past Particle (V3) of Drive" << endl;
+        Checker("Driven");
+        break;
+    case 39:
+    	cout << "Simple Past (V2) of Eat" << endl;
+        Checker("Ate");
+        break;
+    case 40:
+    	cout << "Past Particle (V3) of Eat" << endl;
+        Checker("Eaten");
+        break;
     default:
         cout << "Complete!";
     }
