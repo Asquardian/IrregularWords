@@ -166,6 +166,45 @@ void Words(int i)
     case 40:
     	cout << "Past Particle (V3) of Eat" << endl;
         Checker("Eaten");
+    case 41:
+    	cout << "Simple Past (V2) of Fall" << endl;
+        Checker("Fell");
+        break;
+    case 42:
+    	cout << "Past Particle (V3) of Fall" << endl;
+        Checker("Fallen");
+        break;
+    case 43:
+    	cout << "Simple Past (V2) of Feed" << endl;
+        Checker("Fed");
+        break;
+    case 44:
+    	cout << "Past Particle (V3) of Feed" << endl;
+        Checker("Fed");
+        break;
+    case 45:
+    	cout << "Simple Past (V2) of Fight" << endl;
+        Checker("Fought");
+        break;
+    case 46:
+    	cout << "Past Particle (V3) of Fight" << endl;
+        Checker("Fought");
+        break;
+    case 47:
+    	cout << "Simple Past (V2) of Find" << endl;
+        Checker("Found");
+        break;
+    case 48:
+    	cout << "Past Particle (V3) of Find" << endl;
+        Checker("Found");
+        break;
+    case 49:
+    	cout << "Simple Past (V2) of Fight" << endl;
+        Checker("Fought");
+        break;
+    case 50:
+    	cout << "Past Particle (V3) of Fight" << endl;
+        Checker("Fought");
         break;
     default:
         cout << "Complete!";
