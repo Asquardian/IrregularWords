@@ -199,12 +199,124 @@ void Words(int i)
         Checker("Found");
         break;
     case 49:
-    	cout << "Simple Past (V2) of Fight" << endl;
-        Checker("Fought");
+    	cout << "Simple Past (V2) of Fly" << endl;
+        Checker("Flew");
         break;
     case 50:
-    	cout << "Past Particle (V3) of Fight" << endl;
-        Checker("Fought");
+    	cout << "Past Particle (V3) of Fly" << endl;
+        Checker("Flown");
+        break;
+    case 51:
+    	cout << "Simple Past (V2) of Forget" << endl;
+        Checker("Forgot");
+        break;
+    case 52:
+    	cout << "Past Particle (V3) of Forget" << endl;
+        Checker("Forgotten");
+        break;
+    case 53:
+    	cout << "Simple Past (V2) of Forgive" << endl;
+        Checker("Forgave");
+        break;
+    case 54:
+    	cout << "Past Particle (V3) of Forgive" << endl;
+        Checker("Forgiven");
+        break;
+    case 55:
+    	cout << "Simple Past (V2) of Frize" << endl;
+        Checker("Froze");
+        break;
+    case 56:
+    	cout << "Past Particle (V3) of Frize" << endl;
+        Checker("Frozen");
+        break;
+    case 57:
+    	cout << "Simple Past (V2) of Get" << endl;
+        Checker("Got");
+        break;
+    case 58:
+    	cout << "Past Particle (V3) of Get" << endl;
+        Checker("Got");
+        break;
+    case 59:
+    	cout << "Simple Past (V2) of Give" << endl;
+        Checker("Gave");
+        break;
+    case 60:
+    	cout << "Past Particle (V3) of Give" << endl;
+        Checker("Given");
+        break;
+    case 61:
+    	cout << "Simple Past (V2) of Go" << endl;
+        Checker("Went");
+        break;
+    case 62:
+    	cout << "Past Particle (V3) of Go" << endl;
+        Checker("Gone");
+        break;
+    case 63:
+    	cout << "Simple Past (V2) of Grow" << endl;
+        Checker("Grew");
+        break;
+    case 64:
+    	cout << "Past Particle (V3) of Grow" << endl;
+        Checker("Grown");
+        break;
+	case 65:
+    	cout << "Simple Past (V2) of Have" << endl;
+        Checker("Had");
+        break;
+    case 66:
+    	cout << "Past Particle (V3) of Have" << endl;
+        Checker("Had");
+        break;
+    case 67:
+    	cout << "Simple Past (V2) of Hear" << endl;
+        Checker("Heard");
+        break;
+    case 68:
+    	cout << "Past Particle (V3) of Hear" << endl;
+        Checker("Heard");
+        break;
+    case 69:
+    	cout << "Simple Past (V2) of Hide" << endl;
+        Checker("Hid");
+        break;
+    case 70:
+    	cout << "Past Particle (V3) of Hide" << endl;
+        Checker("Hidden");
+        break;
+    case 71:
+    	cout << "Simple Past (V2) of Hold" << endl;
+        Checker("Held");
+        break;
+    case 72:
+    	cout << "Past Particle (V3) of Hold" << endl;
+        Checker("Held");
+        break;
+    case 73:
+    	cout << "Simple Past (V2) of Hurt" << endl;
+        Checker("Hurt");
+        break;
+    case 74:
+    	cout << "Past Particle (V3) of Hurt" << endl;
+        Checker("Hurt");
+        break;
+    case 75:
+    	cout << "Simple Past (V2) of Keep" << endl;
+        Checker("Kept");
+        break;
+    case 76:
+    	cout << "Past Particle (V3) of Keep" << endl;
+        Checker("Kept");
+        break;
+    case 77:
+    	cout << "Simple Past (V2) of Know" << endl;
+        Checker("Knew");
+        break;
+    case 78:
+    	cout << "Past Particle (V3) of Know" << endl;
+        Checker("Known");
         break;
     default:
         cout << "Complete!";
