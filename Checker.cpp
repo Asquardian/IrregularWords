@@ -8,6 +8,6 @@ void Checker(string word)
         cout << "Correct " << endl;
     } else
         cout << "You made a mistake" << endl;
-    Exit(str);
+    ExitMenu(str);
 }
 

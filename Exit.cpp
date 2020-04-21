@@ -1,5 +1,5 @@
 #include "functions.h"
-void Exit(string str)
+void ExitMenu(string str)
 {
 	if(str == "Exit")
 		Selector();
