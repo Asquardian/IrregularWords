@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "../functions.h"
 string Words(int i)
 {
     string word;
