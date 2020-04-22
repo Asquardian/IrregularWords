@@ -1,11 +1,8 @@
 #include "../functions.h"
-string Words(int i)
+string Words(int Word, int Form)
 {
-    string word;
-    switch (i) {
-    case 0:
-        cout << "Past Simple V2 of Arise" << endl;
-	Checker("Arose");
-    }
+    string word[Word][Form];
+    word[0][1]="Be";
+    cout << word[0][1] << endl;
 }
 

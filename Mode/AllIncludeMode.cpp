@@ -2,10 +2,7 @@
 
 void Mode1()
 {	
-    int i;
+    int Word, Form;
     string word, str;
-    cout << "Enter word from a capital letter";
-    for (i = 0; i < 100; i++) {
-	Words(i);
-	}
+    Words(0, 0);
 }
