@@ -1,8 +1,7 @@
 #include "../functions.h"
 
 void Mode1()
-{	
-    int Word, Form;
-    cout << "Input PS (v2) of ";
+{
+    string word, str;
     Words(0,0);
 }
