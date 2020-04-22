@@ -3,6 +3,6 @@
 void Mode1()
 {	
     int Word, Form;
-    string word, str;
-    Words(0, 0);
+    cout << "Input PS (v2) of ";
+    Words(0,0);
 }
