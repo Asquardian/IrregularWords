@@ -7,7 +7,7 @@ void Words(int Word, int Form)
     if(Form == 0) {
     cout << word[Word][Form] << endl;
 	}
-    if(Form == 1) {
+    if(Form%2 == 1) {
     string OUTPUT = word[Word][Form];
     Checker(OUTPUT);
 	}
