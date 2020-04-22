@@ -1,7 +1,8 @@
 #include "../functions.h"
 
-void Mode1()
+int Mode1()
 {
     string word, str;
-    Words(0,0);
+    cout << "Word is ";
+    Words(0, 0);
 }
