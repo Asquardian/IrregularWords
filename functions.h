@@ -3,5 +3,5 @@
 using namespace std; 
 void Mode1();
 int Checker(string word);
-string Words(int Word, int Form);
+void Words(int Word, int Form);
 
