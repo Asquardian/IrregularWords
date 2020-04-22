@@ -3,4 +3,5 @@
 int main()
 {	
 	Mode1();
+	return 0;
 }

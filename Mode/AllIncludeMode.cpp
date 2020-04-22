@@ -6,4 +6,5 @@ int Mode1()
         cout << "PP(V2) of ";
         Words(0, 0);
 	Words(0, 1);
+	return 0;
 }

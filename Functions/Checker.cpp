@@ -8,5 +8,6 @@ int Checker(string OUTPUT)
             cout << "Correct " << endl;
         } else
             cout << "You made a mistake";
+	return 0;
 }
 
