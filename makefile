@@ -1,2 +1,2 @@
 prog: 
-	g++ -Wall IrregularVerbs.cpp Words.cpp AllIncludeMode.cpp Checker.cpp Exit.cpp Selector.cpp -o VerbsChecker
+	g++ -Wall -Werror IrregularVerbs.cpp Functions/Words.cpp Mode/AllIncludeMode.cpp Functions/Checker.cpp -o VerbsChecker

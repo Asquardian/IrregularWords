@@ -1,9 +1,9 @@
 #include <iostream>
 #include <stdlib.h>
 #include <cstring>
-using namespace std; 
-void Mode1();
-void Checker(string word);
-void Words(int i);
-void ExitMenu(string str);
-int Selector();
+#include <stdlib.h>
+#include <stdio.h>
+using namespace std;
+int Mode1();
+void Words(int Word, int Form);
+int Checker(string OUTPUT);
