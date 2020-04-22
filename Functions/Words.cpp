@@ -3,12 +3,13 @@ void Words(int Form)
 {
     const char *word[100];
     word[0]="Be";
-    word[1]="Was";
-    word[2]="Were";
-    if(Form%2 == 0) {
-    cout << word[Form] << endl;
+    word[1]="Was/Were";
+    word[2]="Been";
+    word[3]="Test";
+    if(Form%3 == 0) {
+    cout << "Ps and PP of " << word[Form] << endl;
 	}
-    if(Form%2 == 1) {
+    else {
     string OUTPUT = word[Form];
     Checker(OUTPUT);
 	}

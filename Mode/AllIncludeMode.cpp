@@ -3,9 +3,6 @@
 int Mode1()
 {
     string str;
-        cout << "PP(V2) of ";
-        Words(0);
-	Words(1);
-        Words(2);
+        for(int i = 0; i < 4; i++) Words(i);
 	return 0;
 }
