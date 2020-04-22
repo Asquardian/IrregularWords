@@ -2,9 +2,14 @@
 
 int Mode1()
 {
-    string word, str;
-        cout << "PP(V2) of ";
-        Words(0, 0);
-	Words(0, 1);
-	return 0;
+    string str;
+    for (int i = 0; i < 5; i++) {
+        if (i % 3 == 0) {
+            cout << "Word is ";
+        }
+        Words(i);
+	if (i == 0)
+ 	cout << "Enter like Singular/Plural" << endl;
+    }
+    return 0;
 }
