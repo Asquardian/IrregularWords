@@ -2,8 +2,10 @@
 
 int Mode1()
 {
-        for (int i = 0; i < 4; i++) {
-	    Words(0);
-	}
+    string str;
+        cout << "PP(V2) of ";
+        Words(0);
+	Words(1);
+        Words(2);
 	return 0;
 }
