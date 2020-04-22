@@ -1,14 +1,15 @@
 #include "../functions.h"
-void Words(int Word, int Form)
+void Words(int Form)
 {
-    const char *word[Word][Form];
-    word[0][0]="Be";
-    word[0][1]="Was";
+    const char *word[100];
+    word[0]="Be";
+    word[1]="Was";
+    word[2]="Were";
     if(Form%2 == 0) {
-    cout << word[Word][Form] << endl;
+    cout << word[Form] << endl;
 	}
     if(Form%2 == 1) {
-    string OUTPUT = word[Word][Form];
+    string OUTPUT = word[Form];
     Checker(OUTPUT);
 	}
 }
