@@ -1,10 +1,10 @@
 #include "../functions.h"
-int Checker(string word)
+int Checker(string OUTPUT)
 {
-	string str;
-        cout << "Enter a word: ";
-        cin >> str;
-        if (str == word) {
+	string INPUT;
+        cout << "Enter a word: " << endl;
+        cin >> INPUT;
+        if (INPUT == OUTPUT) {
             cout << "Correct " << endl;
         } else
             cout << "You made a mistake";

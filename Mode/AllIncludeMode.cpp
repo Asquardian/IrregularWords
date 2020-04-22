@@ -3,6 +3,7 @@
 int Mode1()
 {
     string word, str;
-    cout << "Word is ";
-    Words(0, 0);
+        cout << "PP(V2) of ";
+        Words(0, 0);
+	Words(0, 1);
 }
