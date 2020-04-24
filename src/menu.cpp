@@ -13,7 +13,10 @@ int Menu()
         }
         if (Choose == "Random" || Choose == "random") {
             Mode2();
-        } else
+        }
+        if (Choose == "Exit" || Choose == "exit")
+            exit(0);
+        else
             cout << "Error";
     }
     return 0;

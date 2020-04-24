@@ -7,7 +7,7 @@ void Checker(string OUTPUT)
         if (INPUT == "Exit" || INPUT == "exit")
  	    exit(0);
 	if (INPUT == "ExitMenu" || INPUT == "exitmenu")
- 	    return;
+ 	    Menu();
         if (INPUT == OUTPUT) {
             cout << "Correct " << endl;
         } else
