@@ -3,7 +3,7 @@
 int Mode1()
 {
     string str;
-    for (int i = 3; i < 20.5; i++) {
+    for (int i = 3; i < 353.5; i++) {
         if (i % 3 == 0) {
             cout << "Word is ";
         }

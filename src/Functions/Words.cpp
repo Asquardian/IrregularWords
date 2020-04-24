@@ -1,7 +1,7 @@
 #include "../functions.h"
 void Words(int Form)
 {
-    const int len = 30, all = 1;
+    const int len = 370, all = 1;
     const char end = '\n';
     char word[len][all];
     ifstream file("irregular.forge", ifstream::binary);
