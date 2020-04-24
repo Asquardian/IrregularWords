@@ -2,6 +2,6 @@
 
 int main()
 {	
-	Mode1();
+	Mode2();
 	return 0;
 }

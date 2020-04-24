@@ -6,5 +6,6 @@
 #include <stdlib.h>
 using namespace std;
 int Mode1();
+int Mode2();
 void Words(int Form);
 void Checker(string OUTPUT);
