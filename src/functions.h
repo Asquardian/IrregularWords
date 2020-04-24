@@ -1,9 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
-#include <sstream>
-#include <iomanip>
-#include <stdlib.h>
+#include <unistd.h>
 using namespace std;
 int Menu();
 int Mode1();

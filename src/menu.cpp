@@ -3,6 +3,7 @@
 int Menu()
 {
     int n = 0;
+    system("clear");
     while (n == 0) {
         system("figlet VerbsChecker");
         cout << "                  Enter Mode: All or Random" << endl;
@@ -18,6 +19,7 @@ int Menu()
             exit(0);
         else
             cout << "Error";
+	system("clear");
     }
     return 0;
 }
