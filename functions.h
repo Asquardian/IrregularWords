@@ -1,10 +1,10 @@
 #include <iostream>
-#include <stdlib.h>
 #include <cstring>
-#include <stdlib.h>
-#include <stdio.h>
 #include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <stdlib.h>
 using namespace std;
 int Mode1();
 void Words(int Form);
-int Checker(char OUTPUT);
+void Checker(string OUTPUT);

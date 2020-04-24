@@ -1,21 +1,17 @@
 #include "../functions.h"
 void Words(int Form)
 {
-    const int len=6, all=3;
-    const char end='\n';
+    const int len = 30, all = 1;
+    const char end = '\n';
     char word[len][all];
-    ifstream fs("irregular.txt", ios::in | ios::binary);
-    /*word[0]="Be";
-    word[1]="Was/Were";
-    word[2]="Been";*/
-    for (int r=0; r<len; r++) {
-		fs.getline(word[r], len-1,end); 	
+    ifstream file("irregular.txt", ifstream::binary);
+    for (int r = 0; r != Form; r++) {
+	file.getline(word[Form], len - 1, end);
 	}
-    if(Form%3 == 0) {
-    cout << word[len][Form] << endl;
-	}
-    else {
-    char OUTPUT = word[len][Form];
-    Checker(OUTPUT);
-	}
+    if (Form % 3 == 0) {
+        cout << word[Form] << endl;
+    } else {
+        string OUTPUT = word[Form];
+        Checker(OUTPUT);
+    }
 }
