@@ -6,6 +6,8 @@ void Checker(string OUTPUT)
         cin >> INPUT;
         if (INPUT == "Exit" || INPUT == "exit")
  	    exit(0);
+	if (INPUT == "ExitMenu" || INPUT == "exitmenu")
+ 	    return;
         if (INPUT == OUTPUT) {
             cout << "Correct " << endl;
         } else

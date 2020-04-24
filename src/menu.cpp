@@ -1,6 +1,6 @@
 #include "functions.h"
 
-int main()
+int Menu()
 {
     int n = 0;
     while (n == 0) {
