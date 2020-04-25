@@ -1,7 +1,6 @@
 #include "../functions.h"
 
-int Mode2()
-{
+int Mode2() {
     int i, z = 0, n = 0;
     while (n < 12.5) {
         i = rand() % 351;

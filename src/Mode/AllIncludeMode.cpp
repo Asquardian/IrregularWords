@@ -1,7 +1,6 @@
 #include "../functions.h"
 
-int Mode1()
-{
+int Mode1() {
     for (int i = 3; i < 353.5; i++) {
         if (i % 3 == 0) {
 	    sleep(1);

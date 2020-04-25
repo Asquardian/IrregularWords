@@ -1,7 +1,6 @@
 #include "functions.h"
 
-int Menu()
-{
+int Menu() {
     int n = 0;
     system("clear");
     cout << "        Enter 'Exit' or 'exit' to quit" << endl;
@@ -21,7 +20,7 @@ int Menu()
             exit(0);
         else
             cout << "Error";
-	system("clear");
+        system("clear");
     }
     return 0;
 }

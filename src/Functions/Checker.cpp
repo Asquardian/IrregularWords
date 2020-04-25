@@ -1,6 +1,5 @@
 #include "../functions.h"
-void Checker(string OUTPUT)
-{
+void Checker(string OUTPUT) {
 	string INPUT;
         cout << "Enter a word: ";
         cin >> INPUT;

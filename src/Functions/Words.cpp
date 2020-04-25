@@ -1,6 +1,5 @@
 #include "../functions.h"
-void Words(int Form)
-{
+void Words(int Form) {
     const int len = 370, all = 1;
     const char end = '\n';
     char word[len][all];
