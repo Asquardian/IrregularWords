@@ -1,6 +1,6 @@
 #include "functions.h"
 
 int main() {
-    Menu();
-    return 0;
+  Menu();
+  return 0;
 }
