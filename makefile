@@ -10,7 +10,7 @@ BIN=./bin
 
 all : PROG clean
 
-PROG : main Menu Checker Words AllInclude Random Verbs
+PROG : main Menu Checker Words AllInclude Random Verbs clean
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
