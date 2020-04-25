@@ -5,7 +5,7 @@ void Checker(string OUTPUT)
     cout << "Enter a word: ";
     cin >> INPUT;
     if (INPUT == "Exit" || INPUT == "exit")
-	exit(0);
+        exit(0);
     if (INPUT == "ExitMenu" || INPUT == "exitmenu")
         Menu();
     if (INPUT == OUTPUT) {
