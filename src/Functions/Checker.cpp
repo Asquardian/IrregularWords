@@ -9,8 +9,6 @@ void Checker(string OUTPUT)
     if (INPUT == "ExitMenu" || INPUT == "exitmenu")
         Menu();
     if (INPUT == OUTPUT) {
-	putchar (tolower('q'));
-	cout << INPUT;
         cout << "Correct " << endl;
     } else
         cout << "You made a mistake" << endl;
