@@ -1,6 +1,7 @@
 #include "functions.h"
 
-int main() {
-  Menu();
-  return 0;
+int main()
+{
+    Menu();
+    return 0;
 }
