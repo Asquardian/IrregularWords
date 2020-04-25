@@ -1,6 +1,7 @@
 #include <cstring>
 #include <fstream>
 #include <iostream>
+#include <ctype.h>
 #include <unistd.h>
 using namespace std;
 int Menu();
