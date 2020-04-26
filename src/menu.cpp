@@ -12,30 +12,32 @@ int Menu()
         cout << "                  Enter Mode: All or Random" << endl;
         string Choose;
         cin >> Choose;
-        if (Choose == "All" || Choose == "all") {
+        switch (Choose) {
+        case "All" || "all":
             Mode1();
-        }
-        if (Choose == "Random" || Choose == "random") {
+            break;
+        case "Random" || "random":
             Mode2();
-        }
-	if (Choose == "Save" || Choose == "save") {
-	    cout << "Enter your name";
+            break;
+        case "Save" || "save":
             cin >> a;
-	    ifstream outs;
+            ifstream outs;
             ofstream s;
-            string a;
-	    cout << "Saving...";
-	    outs.open("stat.forge");
-	    outs >> j;
-	    s.open("score.forge");
-            s << a << ": " <<  j << "\n";
-	    cout << "Saving complete";
-	}
-        if (Choose == "Exit" || Choose == "exit")
+            cout << "Saving...";
+            outs.open("stat.forge");
+            outs >> j;
+            s.open("score.forge");
+            s << a << ": " << j << "\n";
+            cout << "Saving complete";
+            break;
+        case "Exit" || "Exit":
+            ofstream del;
+            del.open(stat.forge);
+            del << 0;
             exit(0);
-        else
+        default:
             cout << "Error";
-        system("clear");
+            system("clear");
+        }
+        return 0;
     }
-    return 0;
-}
