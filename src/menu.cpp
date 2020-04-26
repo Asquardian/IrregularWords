@@ -7,7 +7,7 @@ int Menu()
     system("clear");
     cout << "        Enter 'Exit' or 'exit' to quit" << endl;
     cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
-    cout << "  Enter 'Save' or 'save' to save your progress" << endl; 
+    cout << "  Enter 'Save' or 'save' to save your progress" << endl;
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
     system("figlet VerbsChecker");
     cout << "                  Enter Mode: All or Random" << endl;
@@ -30,31 +30,32 @@ int Menu()
                 cout << a;
                 ifstream outs;
                 ofstream save;
-                cout << " Saving... " << endl; 
+                cout << " Saving... " << endl;
                 outs.open("stat.forge");
-                outs >> j; 
+                outs >> j;
                 outs.close();
                 save.open("score.forge");
                 save << a << ":" << j;
                 save.close();
-                cout << "Saving complete" << endl; 
+                cout << "Saving complete" << endl;
             }
         }
-	if (Choose == "Progress" || Choose == "progress") {
-	    ifstream check;
+        if (Choose == "Progress" || Choose == "progress") {
+            ifstream check;
             string a;
-	    check.open("score.forge");
+            check.open("score.forge");
             check >> a;
-	    cout << a << endl;
-            }
+            cout << a << endl;
+        }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
         }
-        if (Choose != "Save" && Choose != "save" && Choose != "Progress" && Choose != "progress") {
+        if (Choose != "Save" && Choose != "save" && Choose != "Progress"
+            && Choose != "progress") {
             system("clear");
-	    system("figlet VerbsChecker");
-    	    cout << "                  Enter Mode: All or Random" << endl;
-	}
+            system("figlet VerbsChecker");
+            cout << "                  Enter Mode: All or Random" << endl;
+        }
     }
     return 0;
 }
