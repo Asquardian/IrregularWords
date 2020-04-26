@@ -2,6 +2,8 @@
 
 int Mode1()
 {
+    ofstream OUT("stat.forge");
+    OUT << 0;
     for (int i = 3; i < 353.5; i++) {
         if (i % 3 == 0) {
             sleep(1);
