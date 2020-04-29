@@ -39,21 +39,23 @@ int Menu()
                 save.close();
                 cout << "Saving complete" << endl;
             }
-        }
-        if (Choose == "Progress" || Choose == "progress") {
-            ifstream check;
-            string a;
-            check.open("score.forge");
-            check >> a;
-            cout << a << endl;
-        }
-        if (Choose == "Exit" || Choose == "exit") {
-            exit(0);
-        }
-        if (Choose != "Save" && Choose != "save" && Choose != "Progress"
-            && Choose != "progress") {
-            system("clear");
-            system("figlet VerbsChecker");
-            cout << "                  Enter Mode: All or Random" << endl;
+            if (Choose == "Progress" || Choose == "progress") {
+                ifstream check;
+                string a;
+                check.open("score.forge");
+                check >> a;
+                cout << a << endl;
+            }
+            if (Choose == "Exit" || Choose == "exit") {
+                exit(0);
+            }
+            if (Choose != "Save" && Choose != "save" && Choose != "Progress"
+                && Choose != "progress") {
+                system("clear");
+                system("figlet VerbsChecker");
+                cout << "                  Enter Mode: All or Random" << endl;
+            }
         }
     }
+    return 0;
+}
