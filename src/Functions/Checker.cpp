@@ -9,7 +9,6 @@ void Checker(string OUTPUT)
     cin >> INPUT;
     if (INPUT == "Exit" || INPUT == "exit") {
         OUT.open("stat.forge");
-        OUT << 0;
         exit(0);
     }
     if (INPUT == "ExitMenu" || INPUT == "exitmenu")
