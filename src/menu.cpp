@@ -46,6 +46,7 @@ int Menu()
             check.open("score.forge");
             check >> a;
             cout << a << endl;
+            check.close();
         }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
