@@ -14,7 +14,12 @@ int Menu()
     while (n == 0) {
         string Choose;
         cin >> Choose;
-        
+        if (Choose == "All" || Choose == "all") {
+            Mode1();
+        }
+        if (Choose == "Random" || Choose == "random") {
+            Mode2();
+        }
         if (Choose == "Save" || Choose == "save") {
             cout << "Do you want to rewrite score? y/n" << endl;
             string answ;
