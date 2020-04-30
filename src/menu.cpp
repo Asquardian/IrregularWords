@@ -2,7 +2,7 @@
 
 int Menu()
 {
-    int n = 0, j, Num;
+    int n = 0, j;
     string a;
     system("clear");
     cout << "        Enter 'Exit' or 'exit' to quit" << endl;
@@ -21,53 +21,57 @@ int Menu()
             Mode2();
         }
         if (Choose == "Save" || Choose == "save") {
-            cout << "Do you want to rewrite score? y/n" << endl;
-            string answ;
-            cin >> answ;
-            if (answ == "y") {
-                cout << "Enter your name: ";
-                cin >> a;
-                cout << a;
-                ifstream outs, load, allnameout;
-                ofstream save, allnamein;
-                string PerRes;
-                allnameout >> Num;
-                if (Num < 11) {
-                    Num++;
-                    allnamein.open("NumName.forge");
-                    allnamein << Num;
-                    allnamein.close();
-                    allnameout.close();
-                    cout << " Saving... " << endl;
-                    outs.open("stat.forge");
-                    allnameout.open("NumName.forge");
-                    outs >> j;
-                    outs.close();
-                    load.open("score.forge");
-                    load >> PerRes;
-                    save.open("score.forge");
-                    save << PerRes << "\n" << a << ":" << j;
-                    save.close();
-                    cout << "Saving complete" << endl;
-                } else {
-                    cout << "Not enough space for save" << endl;
-                    cout << "Clear all data y/n" << endl;
-                    string rewrite;
-                    cin >> rewrite;
-                    if (rewrite == "y") {
-                        ofstream rest, clear;
-                        clear.open("score.forge");
-                        rest.open("NumName.forge");
-                        rest << 1;
-                        clear << 0;
-                        clear.close();
-                        rest.close();
-                    }
+            int Num;
+            cout << "Enter your name: ";
+            cin >> a;
+            cout << a;
+            ifstream outs, load, allnameout;
+            ofstream save, allnamein;
+            string PerRes;
+            allnameout.open("NumName.forge");
+            allnameout >> Num;
+            if (Num < 2.5) {
+                allnamein.open("NumName.forge");
+                allnameout.close();
+                cout << " Saving... " << endl;
+                outs.open("stat.forge");
+                allnameout.open("NumName.forge");
+                outs >> j;
+                outs.close();
+                load.open("score.forge");
+                load >> PerRes;
+                save.open("score.forge");
+                if (Num == 1) {
+                    save << a << ":" << j;
                 }
+                if (Num == 2) {
+                    save << PerRes << "\n" << a << ":" << j;
+                }
+                Num++;
+                allnamein << Num;
+                allnamein.close();
+                save.close();
+                cout << "Saving complete" << endl;
+            } else {
+                cout << "Not enough space for save" << endl;
+                cout << "Clear all data y/n" << endl;
+                string rewrite;
+                cin >> rewrite;
+                if (rewrite == "y") {
+                    ofstream rest, clear;
+                    clear.open("score.forge");
+                    rest.open("NumName.forge");
+                    rest << 1;
+                    clear << "NoData";
+                    clear.close();
+                    rest.close();
+                    cout << "Save again" << endl;
+                } else
+                    cout << "Cancel" << endl;
             }
         }
         if (Choose == "Progress" || Choose == "progress") {
-            const int len = 50, all = 10;
+            const int len = 50, all = 2;
             const char end = '\n';
             char name[len][all];
             ifstream load("score.forge");
