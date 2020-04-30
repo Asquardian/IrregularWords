@@ -2,7 +2,7 @@
 
 int Menu()
 {
-    int n = 0, j;
+    int n = 0, j, Num;
     string a;
     system("clear");
     cout << "        Enter 'Exit' or 'exit' to quit" << endl;
@@ -28,25 +28,53 @@ int Menu()
                 cout << "Enter your name: ";
                 cin >> a;
                 cout << a;
-                ifstream outs;
-                ofstream save;
-                cout << " Saving... " << endl;
-                outs.open("stat.forge");
-                outs >> j;
-                outs.close();
-                save.open("score.forge");
-                save << a << ":" << j;
-                save.close();
-                cout << "Saving complete" << endl;
+                ifstream outs, load, allnameout;
+                ofstream save, allnamein;
+                string PerRes;
+                allnameout >> Num;
+                if (Num < 11) {
+                    Num++;
+                    allnamein.open("NumName.forge");
+                    allnamein << Num;
+                    allnamein.close();
+                    allnameout.close();
+                    cout << " Saving... " << endl;
+                    outs.open("stat.forge");
+                    allnameout.open("NumName.forge");
+                    outs >> j;
+                    outs.close();
+                    load.open("score.forge");
+                    load >> PerRes;
+                    save.open("score.forge");
+                    save << PerRes << "\n" << a << ":" << j;
+                    save.close();
+                    cout << "Saving complete" << endl;
+                } else {
+                    cout << "Not enough space for save" << endl;
+                    cout << "Clear all data y/n" << endl;
+                    string rewrite;
+                    cin >> rewrite;
+                    if (rewrite == "y") {
+                        ofstream rest, clear;
+                        clear.open("score.forge");
+                        rest.open("NumName.forge");
+                        rest << 1;
+                        clear << 0;
+                        clear.close();
+                        rest.close();
+                    }
+                }
             }
         }
         if (Choose == "Progress" || Choose == "progress") {
-            ifstream check;
-            string a;
-            check.open("score.forge");
-            check >> a;
-            cout << a << endl;
-            check.close();
+            const int len = 50, all = 10;
+            const char end = '\n';
+            char name[len][all];
+            ifstream load("score.forge");
+            for (int r = 0; r != all; r++) {
+                load.getline(name[r], len - 1, end);
+                cout << name[r] << endl;
+            }
         }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
@@ -58,5 +86,6 @@ int Menu()
             cout << "                  Enter Mode: All or Random" << endl;
         }
     }
+
     return 0;
 }
