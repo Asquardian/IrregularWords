@@ -14,4 +14,4 @@ Use ./VerbsChecker to start
 
 You should to write all words in AllInclude and Random modes from a capital letter
 
-Programm was launched of Ubuntu 16.04
+Programm was launched of Ubuntu 18.04.3 LTS
