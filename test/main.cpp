@@ -52,6 +52,16 @@ TEST(WordsTest, FromZero)
 {
     EXPECT_EQ(Words(0), "0");
 }
+TEST(Save, Success)
+{
+    EXPECT_EQ(Save(1, "Name"), "SaveSuccess");
+    EXPECT_EQ(Save(1, "Name"), "SaveSuccess");
+}
+TEST(Save, MemoryFull)
+{
+    EXPECT_EQ(Save(3, "Name"), "SaveNotComplete");
+}
+
 
 int main(int argc, char** argv)
 {
