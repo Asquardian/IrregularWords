@@ -59,3 +59,5 @@ testO :
 
 clean :
 	rm -rf *.o
+
+.PHONY : Test clean
