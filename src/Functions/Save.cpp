@@ -9,9 +9,7 @@ string Save(int Num, string Name)
     string PerRes;
     if (Num > 0)
         cout << "Error";
-    if (Num < 2.5 && Num > 0)
-        ;
-    {
+    if (Num < 2.5 && Num > 0) {
         allnamein.open("NumName.forge");
         cout << " Saving... " << endl;
         outs.open("stat.forge");
@@ -32,9 +30,7 @@ string Save(int Num, string Name)
         save.close();
         cout << "Saving complete" << endl;
         return "SaveSuccess";
-    }
-    else
-    {
+    } else {
         cout << "\nNot enough space for save" << endl;
         cout << "Clear all data y/n" << endl;
         string rewrite;
