@@ -26,7 +26,10 @@ int Menu()
             ifstream allnameout;
             allnameout.open("NumName.forge");
             allnameout >> Num;
-            Save(Num);
+            cout << "Spaces will not count \nEnter your name: ";
+            string Name;
+            cin >> Name;
+            Save(Num, Name);
             allnameout.open("NumName.forge");
         }
         if (Choose == "Progress" || Choose == "progress") {

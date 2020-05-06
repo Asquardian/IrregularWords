@@ -1,11 +1,8 @@
 #include "../functions.h"
 
-string Save(int Num)
+string Save(int Num, string Name)
 {
     cout << "Spaces will not count \nEnter your name: ";
-    string a;
-    cin >> a;
-    cout << a;
     int j;
     ifstream outs, load;
     ofstream save, allnamein;
@@ -20,10 +17,10 @@ string Save(int Num)
         load >> PerRes;
         save.open("score.forge");
         if (Num == 1) {
-            save << a << ":" << j;
+            save << Name << ":" << j;
         }
         if (Num == 2) {
-            save << PerRes << "\n" << a << ":" << j;
+            save << PerRes << "\n" << Name << ":" << j;
         }
         Num++;
         allnamein << Num;
