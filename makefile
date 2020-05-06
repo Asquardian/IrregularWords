@@ -14,6 +14,8 @@ GOOGLE_TEST_LIB = gtest
 
 GOOGLE_TEST_INCLUDE = /usr/local/include
 
+TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
+
 all : PROG clean
 
 PROG : main Menu Checker Words AllInclude Random Verbs clean
@@ -37,13 +39,13 @@ Random :
 	$(CC) $(CPPFLAGS) $(SRC)/Mode/RandomMode.cpp
 
 Verbs :
-	$(CC) $(OBJ) -o $(BIN)/VerbsChecker
+	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe
 
 Test : maintest clean
 
 maintest :
 	$(CC) $(CPPFLAGS) $(GOOGLE_TEST_INCLUDE) $(TEST)/main.cpp
-	$(CC) main.o -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread -o test.out
+	$(CC) main.o $(TEST_FLAG) -o test.exe
 
 clean :
 	rm -rf *.o
