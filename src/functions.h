@@ -7,5 +7,5 @@ int Menu();
 int Mode1();
 int Mode2();
 int Mode3();
-void Words(int Form);
+string Words(int Form);
 void Checker(string OUTPUT);
