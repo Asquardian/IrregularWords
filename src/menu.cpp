@@ -10,14 +10,21 @@ int Menu()
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
     cout << "Enter 'Now' or 'now' to see your last score" << endl;
     system("figlet VerbsChecker");
-    cout << "                  Enter Mode: All or Random" << endl;
+    cout << "                  Enter Mode: All or Random or Continue" << endl;
     while (n == 0) {
         string Choose;
         cin >> Choose;
         if (Choose == "All" || Choose == "all") {
-            Mode1();
+            ofstream OUT("stat.forge");
+            OUT << 0;
+            Mode1(3);
+        }
+        if (Choose == "Continue" || Choose == "Continue") {
+            Continue();
         }
         if (Choose == "Random" || Choose == "random") {
+            ofstream OUT("stat.forge");
+            OUT << 0;
             Mode2();
         }
         if (Choose == "Save" || Choose == "save") {
@@ -32,7 +39,7 @@ int Menu()
             allnameout.open("NumName.forge");
         }
         if (Choose == "Progress" || Choose == "progress") {
-           Progress();
+            Progress();
         }
         if (Choose == "Now" || Choose == "now") {
             Now();
