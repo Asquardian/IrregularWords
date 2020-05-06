@@ -9,9 +9,9 @@ string Words(int Form)
         file.getline(word[Form], len - 1, end);
     }
     if (Form % 3 == 0) {
-	return "0";
+        return "0";
     } else {
         string OUTPUT = word[Form];
-	return OUTPUT;
+        return OUTPUT;
     }
 }
