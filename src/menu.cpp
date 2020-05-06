@@ -19,7 +19,7 @@ int Menu()
             OUT << 0;
             Mode1(3);
         }
-        if (Choose == "Continue" || Choose == "Continue") {
+        if (Choose == "Continue" || Choose == "continue") {
             Continue();
         }
         if (Choose == "Random" || Choose == "random") {
