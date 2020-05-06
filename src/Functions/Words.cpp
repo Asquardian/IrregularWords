@@ -10,10 +10,10 @@ string Words(int Form)
     }
     if (Form % 3 == 0) {
         cout << word[Form] << endl;
-	return "0";
+        return "0";
     } else {
         string OUTPUT = word[Form];
         Checker(OUTPUT);
-	return OUTPUT;
+        return OUTPUT;
     }
 }
