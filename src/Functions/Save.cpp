@@ -8,7 +8,9 @@ string Save(int Num, string Name)
     ofstream save, allnamein;
     string PerRes;
     if (Num > 0)
-        cout << "Error" if (Num < 2.5 && Num > 0);
+        cout << "Error";
+    if (Num < 2.5 && Num > 0)
+        ;
     {
         allnamein.open("NumName.forge");
         cout << " Saving... " << endl;
