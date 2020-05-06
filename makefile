@@ -14,8 +14,6 @@ TEST=./test
 
 GOOGLE_TEST_LIB = gtest
 
-GOOGLE_TEST_INCLUDE = /usr/local/include
-
 TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
 all : PROG clean
@@ -46,10 +44,10 @@ Save :
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe
 
-Test : testM WordsTesting Save testO clean
+testall : testM WordsTesting Save testO clean
 
 testM :
-	$(CC) $(CPPFLAGS) $(GOOGLE_TEST_INCLUDE) $(TEST)/main.cpp
+	$(CC) $(CPPFLAGS) $(TEST)/main.cpp
 
 WordsTesting : 
 	$(CC) $(CPPFLAGS) $(TEST)/WordsTestNoCoutChecker.cpp
@@ -60,4 +58,4 @@ testO :
 clean :
 	rm -rf *.o
 
-.PHONY : Test clean
+.PHONY : testall clean
