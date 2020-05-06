@@ -3,7 +3,6 @@
 int Menu()
 {
     int n = 0;
-    string a;
     system("clear");
     cout << "        Enter 'Exit' or 'exit' to quit" << endl;
     cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
@@ -33,22 +32,10 @@ int Menu()
             allnameout.open("NumName.forge");
         }
         if (Choose == "Progress" || Choose == "progress") {
-            const int len = 50, all = 2;
-            const char end = '\n';
-            char name[len][all];
-            ifstream load("score.forge");
-            for (int r = 0; r != all; r++) {
-                load.getline(name[r], len - 1, end);
-                cout << name[r] << endl;
-            }
+           Progress();
         }
         if (Choose == "Now" || Choose == "now") {
-            ifstream stat;
-            string curstat;
-            stat.open("stat.forge");
-            stat >> a;
-            cout << a << endl;
-            stat.close();
+            Now();
         }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
