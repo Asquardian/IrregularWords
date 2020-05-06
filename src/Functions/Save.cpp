@@ -7,7 +7,9 @@ string Save(int Num, string Name)
     ifstream outs, load;
     ofstream save, allnamein;
     string PerRes;
-    if (Num < 2.5) {
+    if (Num > 0)
+        cout << "Error" if (Num < 2.5 && Num > 0);
+    {
         allnamein.open("NumName.forge");
         cout << " Saving... " << endl;
         outs.open("stat.forge");
@@ -28,7 +30,9 @@ string Save(int Num, string Name)
         save.close();
         cout << "Saving complete" << endl;
         return "SaveSuccess";
-    } else {
+    }
+    else
+    {
         cout << "\nNot enough space for save" << endl;
         cout << "Clear all data y/n" << endl;
         string rewrite;
@@ -42,9 +46,8 @@ string Save(int Num, string Name)
             clear.close();
             rest.close();
             cout << "Cleared\nSave again" << endl;
-            return "MemoryClear";
         } else
             cout << "Cancel" << endl;
-        return "Cancel";
+        return "SaveNotComplete";
     }
 }
