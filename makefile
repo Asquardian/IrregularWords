@@ -2,7 +2,7 @@ CC=g++
 
 CPPFLAGS=-Wall -Werror -Wextra -c
 
-OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Tab.o
+OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o
 
 OBJ_TEST=main.o WordsTestNoCoutChecker.o Save.o
 
@@ -20,7 +20,7 @@ TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
 all : PROG clean
 
-PROG : main Menu Checker Words AllInclude Random Save Tab Verbs clean
+PROG : main Menu Checker Words AllInclude Random Save Verbs clean
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
@@ -42,10 +42,6 @@ Random :
 
 Save :
 	$(CC) $(CPPFLAGS) $(SRC)/Functions/Save.cpp
-
-Tab :
-	$(CC) $(CPPFLAGS) $(SRC)/Mode/Tab.cpp
-
 
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe

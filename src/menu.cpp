@@ -50,9 +50,6 @@ int Menu()
             cout << a << endl;
             stat.close();
         }
-        if (Choose == "Tab" || Choose == "tab") {
-            Tab();
-        }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
         }
