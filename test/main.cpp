@@ -61,7 +61,10 @@ TEST(Save, MemoryFull)
 {
     EXPECT_EQ(Save(3, "Name"), "SaveNotComplete");
 }
-
+TEST(Save, Error)
+{
+    EXPECT_EQ(Save(0, "Name"), "0");
+}
 
 int main(int argc, char** argv)
 {
