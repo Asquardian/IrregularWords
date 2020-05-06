@@ -9,6 +9,7 @@ int Menu()
     cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
     cout << "  Enter 'Save' or 'save' to save your progress" << endl;
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
+    cout << "Enter 'Now' or 'now' to see your last score" << endl;
     system("figlet VerbsChecker");
     cout << "                  Enter Mode: All or Random" << endl;
     while (n == 0) {
@@ -48,11 +49,19 @@ int Menu()
             cout << a << endl;
             check.close();
         }
+	if (Choose == "Now" || Choose == "now") {
+            ifstream stat;
+            string curstat;
+            stat.open("stat.forge");
+            stat >> a;
+            cout << a << endl;
+            stat.close();
+        }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
         }
         if (Choose != "Save" && Choose != "save" && Choose != "Progress"
-            && Choose != "progress") {
+            && Choose != "progress" && Choose !="Now" && Choose != "now") {
             system("clear");
             system("figlet VerbsChecker");
             cout << "                  Enter Mode: All or Random" << endl;
