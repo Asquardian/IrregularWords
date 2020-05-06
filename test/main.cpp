@@ -1,3 +1,4 @@
+#include "../src/functions.h"
 #include <cstring>
 #include <gtest/gtest.h>
 
@@ -35,6 +36,19 @@ TEST(StringTest, CommentStarTest)
     EXPECT_EQ(str2, str2origin);
     EXPECT_EQ(str3, str3origin);
 }
+TEST(WordsTest, MinTest)
+{
+    EXPECT_EQ(Words(3), "0");
+}
+TEST(WordsTest, MaxTest)
+{
+    EXPECT_EQ(Words(353), "Written");
+}
+TEST(WordsTest, OutRange)
+{
+    EXPECT_EQ(Words(354), "0");
+}
+
 
 int main(int argc, char** argv)
 {

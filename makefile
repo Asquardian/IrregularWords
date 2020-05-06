@@ -4,6 +4,8 @@ CPPFLAGS=-Wall -Werror -Wextra -c
 
 OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o
 
+OBJ_TEST=main.o WordsTestNoCoutChecker.o
+
 SRC=./src
 
 BIN=./bin
@@ -41,11 +43,16 @@ Random :
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe
 
-Test : maintest clean
+Test : testM WordsTesting Checker Menu AllInclude Random testO clean
 
-maintest :
+testM :
 	$(CC) $(CPPFLAGS) $(GOOGLE_TEST_INCLUDE) $(TEST)/main.cpp
-	$(CC) main.o $(TEST_FLAG) -o test.exe
+
+WordsTesting : 
+	$(CC) $(CPPFLAGS) $(TEST)/WordsTestNoCoutChecker.cpp
+
+testO :
+	$(CC) $(OBJ_TEST) $(TEST_FLAG) -o $(TEST)/test.exe
 
 clean :
 	rm -rf *.o
