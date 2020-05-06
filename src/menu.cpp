@@ -54,7 +54,7 @@ int Menu()
                 save.close();
                 cout << "Saving complete" << endl;
             } else {
-                cout << "Not enough space for save" << endl;
+                cout << "\nNot enough space for save" << endl;
                 cout << "Clear all data y/n" << endl;
                 string rewrite;
                 cin >> rewrite;
@@ -63,10 +63,10 @@ int Menu()
                     clear.open("score.forge");
                     rest.open("NumName.forge");
                     rest << 1;
-                    clear << "NoData";
+                    clear << "No Data";
                     clear.close();
                     rest.close();
-                    cout << "Save again" << endl;
+                    cout << "Cleared\nSave again" << endl;
                 } else
                     cout << "Cancel" << endl;
             }
