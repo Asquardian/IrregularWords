@@ -48,7 +48,10 @@ TEST(WordsTest, OutRange)
 {
     EXPECT_EQ(Words(354), "0");
 }
-
+TEST(WordsTest, FromZero)
+{
+    EXPECT_EQ(Words(0), "0");
+}
 
 int main(int argc, char** argv)
 {
