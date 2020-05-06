@@ -9,3 +9,4 @@ int Mode2();
 int Mode3();
 string Words(int Form);
 void Checker(string OUTPUT);
+string Save(int Num, string Name);
