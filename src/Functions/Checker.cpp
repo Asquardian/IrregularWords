@@ -8,8 +8,6 @@ void Checker(string OUTPUT)
     cout << "Enter a word: ";
     cin >> INPUT;
     if (INPUT == "Exit" || INPUT == "exit") {
-        OUT.open("stat.forge");
-        OUT << 0;
         exit(0);
     }
     if (INPUT == "ExitMenu" || INPUT == "exitmenu")
