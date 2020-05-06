@@ -10,6 +10,10 @@ BIN=./bin
 
 TEST=./test
 
+GOOGLE_TEST_LIB = gtest
+
+GOOGLE_TEST_INCLUDE = /usr/local/include
+
 all : PROG clean
 
 PROG : main Menu Checker Words AllInclude Random Verbs clean
@@ -35,8 +39,11 @@ Random :
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker
 
-Test :
-	gcc -Wall -fPIC $(TEST)/main.cpp
+Test : maintest clean
+
+maintest :
+	$(CC) $(CPPFLAGS) $(GOOGLE_TEST_INCLUDE) $(TEST)/main.cpp
+	$(CC) main.o -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread -o test.out
 
 clean :
 	rm -rf *.o
