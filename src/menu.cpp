@@ -25,7 +25,7 @@ int Menu()
             string answ;
             cin >> answ;
             if (answ == "y") {
-                cout << "Enter your name: ";
+                cout << "Spaces will not count \nEnter your name: ";
                 cin >> a;
                 cout << a;
                 ifstream outs;
