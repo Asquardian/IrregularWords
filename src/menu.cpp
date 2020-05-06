@@ -50,11 +50,15 @@ int Menu()
             cout << a << endl;
             stat.close();
         }
+        if (Choose == "Tab" || Choose == "tab") {
+            Tab();
+        }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
         }
         if (Choose != "Save" && Choose != "save" && Choose != "Progress"
-            && Choose != "progress" && Choose != "Now" && Choose != "now") {
+            && Choose != "progress" && Choose != "Now" && Choose != "now"
+            && Choose != "Tab" && Choose != "tab") {
             system("clear");
             system("figlet VerbsChecker");
             cout << "                  Enter Mode: All or Random" << endl;
