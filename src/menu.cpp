@@ -13,8 +13,6 @@ int Menu()
     system("figlet VerbsChecker");
     cout << "                  Enter Mode: All or Random" << endl;
     while (n == 0) {
-        string Choose;
-        cin >> Choose;
         if (Choose == "All" || Choose == "all") {
             Mode1();
         }
