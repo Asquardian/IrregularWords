@@ -2,9 +2,9 @@ CC=g++
 
 CPPFLAGS=-Wall -Werror -Wextra -c
 
-OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o
+OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o Check.o
 
-OBJ_TEST=main.o WordsTestNoCoutChecker.o Save.o 
+OBJ_TEST=main.o WordsTestNoCoutChecker.o Save.o AllIncludeMode.o
 
 SRC=./src
 
@@ -18,7 +18,7 @@ TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
 all : PROG clean
 
-PROG : main Menu Checker Words AllInclude Random Save Progress Now Continue Verbs clean
+PROG : main Menu Checker Words AllInclude Random Save Progress Now Continue Check Verbs clean
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
@@ -50,10 +50,13 @@ Now :
 Continue :
 	$(CC) $(CPPFLAGS) $(SRC)/Mode/Continue.cpp
 
+Check :
+	$(CC) $(CPPFLAGS) $(SRC)/Check.cpp
+
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe
 
-testall : testM WordsTesting Save testO clean
+testall : testM WordsTesting Save AllInclude testO clean
 
 testM :
 	$(CC) $(CPPFLAGS) $(TEST)/main.cpp
