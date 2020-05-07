@@ -115,6 +115,10 @@ TEST(Save, Error)
 {
     EXPECT_EQ(Save(0, "Name"), "0");
 }
+TEST(ModeTest, OutRange)
+{
+    EXPECT_EQ(Mode1(354), 0);
+}
 
 int main(int argc, char** argv)
 {
