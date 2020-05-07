@@ -2,7 +2,7 @@
 
 int Mode1(int i)
 {
-    if (i >= 3) {
+    if (i > 2.5) {
         while (i < 353.5) {
             if (i % 3 == 0) {
                 sleep(1);
@@ -19,8 +19,8 @@ int Mode1(int i)
             i++;
             ofstream cont("continue.forge");
             cont << i;
-            return 1;
         }
+        return 1;
     }
     return 0;
 }
