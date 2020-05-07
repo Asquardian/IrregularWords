@@ -15,3 +15,4 @@ string Save(int Num, string Name);
 void Continue();
 void Progress();
 void Now();
+void Check();
