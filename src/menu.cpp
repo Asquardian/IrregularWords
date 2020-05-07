@@ -59,6 +59,5 @@ int Menu()
             cout << "                  Enter Mode: All or Random" << endl;
         }
     }
-
     return 0;
 }
