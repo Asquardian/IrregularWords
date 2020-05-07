@@ -36,9 +36,9 @@ int Menu()
             char Name[46];
             cin >> Name;
             while (strlen(Name) > 46) {
-		cout << "Number of characters is more than 46";
+                cout << "Number of characters is more than 46";
                 cin >> Name;
-}
+            }
             Save(Num, Name);
             allnameout.open("NumName.forge");
         }
