@@ -2,6 +2,7 @@
 
 int main()
 {
+    Check();
     Menu();
     return 0;
 }
