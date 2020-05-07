@@ -1,6 +1,6 @@
 #include "../src/functions.h"
-#include <cstring>
 #include "gtest/gtest.h"
+#include <cstring>
 
 using namespace std;
 
@@ -64,6 +64,10 @@ TEST(Save, MemoryFull)
 TEST(Save, Error)
 {
     EXPECT_EQ(Save(0, "Name"), "0");
+}
+TEST(ModeTest, Mintest)
+{
+    EXPECT_EQ(Mode1(0), 0);
 }
 
 int main(int argc, char** argv)
