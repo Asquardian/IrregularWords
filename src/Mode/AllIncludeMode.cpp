@@ -19,8 +19,8 @@ int Mode1(int i)
             i++;
             ofstream cont("continue.forge");
             cont << i;
+            return 1;
         }
-        return 1;
     }
     return 0;
 }
