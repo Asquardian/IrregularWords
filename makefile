@@ -2,9 +2,9 @@ CC=g++
 
 CPPFLAGS=-Wall -Werror -Wextra -c
 
-OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o
+OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o Check.o
 
-OBJ_TEST=main.o WordsTestNoCoutChecker.o Save.o
+OBJ_TEST=main.o WordsTestNoCoutChecker.o Save.o AllIncludeMode.o
 
 SRC=./src
 
@@ -14,13 +14,11 @@ TEST=./test
 
 GOOGLE_TEST_LIB = gtest
 
-GOOGLE_TEST_INCLUDE = /usr/local/include
-
 TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
 all : PROG clean
 
-PROG : main Menu Checker Words AllInclude Random Save Verbs clean
+PROG : main Menu Checker Words AllInclude Random Save Progress Now Continue Check Verbs clean
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
@@ -43,13 +41,25 @@ Random :
 Save :
 	$(CC) $(CPPFLAGS) $(SRC)/Functions/Save.cpp
 
+Progress :
+	$(CC) $(CPPFLAGS) $(SRC)/Functions/Progress.cpp
+
+Now :
+	$(CC) $(CPPFLAGS) $(SRC)/Functions/Now.cpp
+
+Continue :
+	$(CC) $(CPPFLAGS) $(SRC)/Mode/Continue.cpp
+
+Check :
+	$(CC) $(CPPFLAGS) $(SRC)/Check.cpp
+
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe
 
-Test : testM WordsTesting Save testO clean
+testall : testM WordsTesting Save AllInclude testO clean
 
 testM :
-	$(CC) $(CPPFLAGS) $(GOOGLE_TEST_INCLUDE) $(TEST)/main.cpp
+	$(CC) $(CPPFLAGS) $(TEST)/main.cpp
 
 WordsTesting : 
 	$(CC) $(CPPFLAGS) $(TEST)/WordsTestNoCoutChecker.cpp
@@ -59,3 +69,5 @@ testO :
 
 clean :
 	rm -rf *.o
+
+.PHONY : testall clean

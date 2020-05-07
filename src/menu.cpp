@@ -3,7 +3,6 @@
 int Menu()
 {
     int n = 0;
-    string a;
     system("clear");
     cout << "        Enter 'Exit' or 'exit' to quit" << endl;
     cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
@@ -11,14 +10,21 @@ int Menu()
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
     cout << "Enter 'Now' or 'now' to see your last score" << endl;
     system("figlet VerbsChecker");
-    cout << "                  Enter Mode: All or Random" << endl;
+    cout << "                  Enter Mode: All or Random or Continue" << endl;
     while (n == 0) {
         string Choose;
         cin >> Choose;
         if (Choose == "All" || Choose == "all") {
-            Mode1();
+            ofstream OUT("stat.forge");
+            OUT << 0;
+            Mode1(3);
+        }
+        if (Choose == "Continue" || Choose == "continue") {
+            Continue();
         }
         if (Choose == "Random" || Choose == "random") {
+            ofstream OUT("stat.forge");
+            OUT << 0;
             Mode2();
         }
         if (Choose == "Save" || Choose == "save") {
@@ -33,22 +39,10 @@ int Menu()
             allnameout.open("NumName.forge");
         }
         if (Choose == "Progress" || Choose == "progress") {
-            const int len = 50, all = 2;
-            const char end = '\n';
-            char name[len][all];
-            ifstream load("score.forge");
-            for (int r = 0; r != all; r++) {
-                load.getline(name[r], len - 1, end);
-                cout << name[r] << endl;
-            }
+            Progress();
         }
         if (Choose == "Now" || Choose == "now") {
-            ifstream stat;
-            string curstat;
-            stat.open("stat.forge");
-            stat >> a;
-            cout << a << endl;
-            stat.close();
+            Now();
         }
         if (Choose == "Exit" || Choose == "exit") {
             exit(0);
