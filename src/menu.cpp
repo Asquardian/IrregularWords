@@ -33,8 +33,12 @@ int Menu()
             allnameout.open("NumName.forge");
             allnameout >> Num;
             cout << "Spaces will not count \nEnter your name: ";
-            string Name;
+            char Name[46];
             cin >> Name;
+            while (strlen(Name) > 46) {
+		cout << "Number of characters is more than 46";
+                cin >> Name;
+}
             Save(Num, Name);
             allnameout.open("NumName.forge");
         }
