@@ -115,11 +115,6 @@ TEST(Save, Error)
 {
     EXPECT_EQ(Save(0, "Name"), "0");
 }
-TEST(Save, NameOver46)
-{
-    char* Name = "12345678901234567890123456789012345678901234567";
-    EXPECT_EQ(Save(0, Name), "-1");
-}
 TEST(ModeTest, OutRange)
 {
     EXPECT_EQ(Mode1(354), 0);
