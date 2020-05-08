@@ -1,4 +1,4 @@
-Pre-release v 0.1
+VerbsChecker Pre-release v 0.1
 
 For Working needs FIGlet
 You can get it in Terminal
