@@ -16,6 +16,7 @@ Use "make testall" to make a test
 Use ./VerbsChecker.exe to start
 
 Mode AllInclude and Random is very similar. You can continue from your last word with it
+
 Mode Random is randomly select word in list to check. Its will continue for 12 times
 
 You should to write all words in AllInclude, Continue and Random modes from a capital letter
