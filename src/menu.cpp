@@ -8,9 +8,10 @@ int Menu()
     cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
     cout << "  Enter 'Save' or 'save' to save your progress" << endl;
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
-    cout << "Enter 'Now' or 'now' to see your last score" << endl;
+    cout << "  Enter 'Now' or 'now' to see your last score" << endl;
     system("figlet VerbsChecker");
-    cout << "                  Enter Mode: All or Random or Continue" << endl;
+    cout << "                                                       ver. pr-0.1" << endl;
+    cout << "              Enter Mode: All or Random or Continue" << endl;
     while (n == 0) {
         string Choose;
         cin >> Choose;
