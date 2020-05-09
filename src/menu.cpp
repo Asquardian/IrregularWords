@@ -3,12 +3,13 @@
 int Menu()
 {
     int n = 0;
-    cout << "        Enter 'Exit' or 'exit' to quit" << endl;
+    cout << "\n\n\n\n        Enter 'Exit' or 'exit' to quit" << endl;
     cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
     cout << "  Enter 'Save' or 'save' to save your progress" << endl;
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
     cout << "  Enter 'Now' or 'now' to see your last score" << endl;
     system("figlet VerbsChecker");
+    cout << "                                             exper v0.1" << endl;
     cout << "                  Enter Mode: All or Random or Continue" << endl;
     while (n == 0) {
         string Choose;
@@ -53,6 +54,7 @@ int Menu()
         if (Choose != "Save" && Choose != "save" && Choose != "Progress"
             && Choose != "progress" && Choose != "Now" && Choose != "now"
             && Choose != "Tab" && Choose != "tab") {
+            cout << "\n\n\n\n";
             system("figlet VerbsChecker");
             cout << "                  Enter Mode: All or Random" << endl;
         }
