@@ -1,4 +1,4 @@
-Pre-release v 0.1
+VerbsChecker Pre-release v 0.1
 
 For Working needs FIGlet
 You can get it in Terminal
@@ -10,8 +10,10 @@ For CentOS, RHEL, Fedora and etc:
 $ yum install figlet
 
 Use "make" to make programm
+
 Programm will be in "bin" directory
-Use "make testall" to make a test
+
+Use "make Test" to make a test
 
 Use ./VerbsChecker.exe to start
 
