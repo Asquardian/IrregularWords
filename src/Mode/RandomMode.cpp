@@ -12,8 +12,7 @@ int Mode2()
         }
         while (z < 3) {
             if (i % 3 == 0) {
-                sleep(1);
-                system("clear");
+                cout << "\n\n\n\n";
                 cout << "Word is ";
             }
             Words(i);
