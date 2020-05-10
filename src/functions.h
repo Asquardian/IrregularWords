@@ -2,15 +2,13 @@
 #include <fstream>
 #include <iostream>
 
-using namespace std;
-
 int Menu();
 int Mode1(int i);
 int Mode2();
 int Mode3();
-string Words(int Form);
-void Checker(string OUTPUT);
-string Save(int Num, string Name);
+std::string Words(int Form);
+void Checker(std::string OUTPUT);
+std::string Save(int Num, std::string Name);
 void Continue();
 void Progress();
 void Now();

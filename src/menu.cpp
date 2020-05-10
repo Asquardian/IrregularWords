@@ -1,5 +1,7 @@
 #include "functions.h"
 
+using namespace std;
+
 int Menu()
 {
     int n = 0;

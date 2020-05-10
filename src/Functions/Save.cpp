@@ -1,5 +1,7 @@
 #include "../functions.h"
 
+using namespace std;
+
 string Save(int Num, string Name)
 {
     cout << "Spaces will not count \nEnter your name: ";

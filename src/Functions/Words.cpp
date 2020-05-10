@@ -1,4 +1,7 @@
 #include "../functions.h"
+
+using namespace std;
+
 string Words(int Form)
 {
     const int len = 370, all = 1;

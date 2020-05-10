@@ -1,5 +1,7 @@
 #include "../functions.h"
 
+using namespace std;
+
 int Mode2()
 {
     int i, z = 0, n = 0;

@@ -1,5 +1,7 @@
 #include "../functions.h"
 
+using namespace std;
+
 void Now()
 {
     string a;
