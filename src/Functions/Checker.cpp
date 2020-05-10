@@ -16,12 +16,12 @@ void Checker(string OUTPUT)
     if (INPUT == "ExitMenu" || INPUT == "exitmenu")
         Menu();
     if (INPUT == OUTPUT) {
-        cout << "Correct " << endl;
+        cout << "Correct \n";
         IN.open("stat.forge");
         IN >> j;
         j++;
         OUT.open("stat.forge");
         OUT << j;
     } else
-        cout << "You made a mistake" << endl;
+        cout << "You made a mistake\n";
 }

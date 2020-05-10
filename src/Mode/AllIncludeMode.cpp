@@ -17,7 +17,7 @@ int Mode1(int i)
                 cout << "PS V2 ";
             Words(i);
             if (i == 3)
-                cout << "Enter like Singular/Plural" << endl;
+                cout << "Enter like Singular/Plural\n";
             i++;
             ofstream cont("continue.forge");
             cont << i;

@@ -4,7 +4,7 @@ CPPFLAGS=-Wall -Werror -Wextra -c
 
 OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o Check.o
 
-OBJ_TEST=main.o testall.o Words.o Save.o AllIncludeMode.o
+OBJ_TEST=testall.o
 
 SRC=./src
 
@@ -20,9 +20,9 @@ CPPTEST_FLAGS = -c -Wall -I $(GOOGLE_TEST_INCLUDE)
 
 TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
-all : PROG clean
+all : main PROG Verbs clean
 
-PROG : main Menu Checker Words AllInclude Random Save Progress Now Continue Check Verbs clean
+PROG : Menu Checker Words AllInclude Random Save Progress Now Continue Check
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
@@ -60,7 +60,7 @@ Check :
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe 
 
-testall : testM testT WordsTesting Save AllInclude testO clean
+testall : PROG testM testT testO clean
 
 testM :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/main.cpp
@@ -68,11 +68,8 @@ testM :
 testT :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/testall.cpp
 
-WordsTesting : 
-	$(CC) $(CPPFLAGS) $(TEST)/Words.cpp
-
 testO :
-	$(CC) $(OBJ_TEST) $(TEST_FLAG) -o $(TEST)/test.exe
+	$(CC) $(OBJ_TEST) $(OBJ) $(TEST_FLAG) -o $(TEST)/test.exe
 
 clean :
 	rm -rf *.o

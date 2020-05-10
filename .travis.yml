@@ -1,6 +1,6 @@
 dist: xenial
 
-before_install:
+script:
   - wget https://github.com/google/googletest/archive/release-1.8.0.tar.gz
   - tar xf release-1.8.0.tar.gz
   - cd googletest-release-1.8.0
@@ -15,8 +15,8 @@ before_install:
   - cd ..
   - cd ..
   - cd ..
-script:
   - make && make testall
+  - ./test/test.exe
   - git ls-files src/ | xargs clang-format -i && git diff --exit-code
   - git ls-files test/ | xargs clang-format -i && git diff --exit-code
 language: cpp
