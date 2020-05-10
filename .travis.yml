@@ -12,6 +12,9 @@ before_install:
   - cd googlemock
   - cd gtest
   - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
+  - cd ..
+  - cd ..
+  - cd ..
 script:
   - make && make testall
   - git ls-files src/ | xargs clang-format -i && git diff --exit-code
