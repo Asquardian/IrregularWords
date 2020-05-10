@@ -1,6 +1,6 @@
 #include "../functions.h"
-#include <stdlib.h>
 #include <fstream>
+#include <stdlib.h>
 
 using namespace std;
 
