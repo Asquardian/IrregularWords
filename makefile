@@ -1,6 +1,6 @@
 CC=g++
 
-CPPFLAGS=-Wall -Werror -Wextra -c
+CPPFLAGS=-Wall -Werror -Wextra -c -t
 
 OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o Check.o
 
@@ -20,9 +20,15 @@ CPPTEST_FLAGS = -c -Wall -I $(GOOGLE_TEST_INCLUDE)
 
 TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
-all : main PROG Verbs clean
+all : 
+	cd $(BIN); ./VerbsChecker.exe
+
+runtest : 
+	cd $(TEST); ./test.exe
 
 PROG : Menu Checker Words AllInclude Random Save Progress Now Continue Check
+
+Build : main PROG Verbs clean
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
