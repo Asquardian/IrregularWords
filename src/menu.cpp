@@ -10,9 +10,8 @@ int Menu()
     cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
     cout << "  Enter 'Now' or 'now' to see your last score" << endl;
     system("figlet VerbsChecker");
-    cout << "                                                       ver. pr-0.1"
-         << endl;
-    cout << "              Enter Mode: All or Random or Continue" << endl;
+    cout << "                                         ver. pre release 01";
+    cout << endl << "        Enter Mode: All or Random or Continue" << endl;
     while (n == 0) {
         string Choose;
         cin >> Choose;
