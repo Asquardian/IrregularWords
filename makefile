@@ -20,9 +20,9 @@ CPPTEST_FLAGS = -c -Wall -I $(GOOGLE_TEST_INCLUDE)
 
 TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
-all : PROG clean
+all : main PROG Verbs clean
 
-PROG : main Menu Checker Words AllInclude Random Save Progress Now Continue Check Verbs clean
+PROG : Menu Checker Words AllInclude Random Save Progress Now Continue Check
 
 main:
 	$(CC) $(CPPFLAGS) $(SRC)/main.cpp 
@@ -60,16 +60,13 @@ Check :
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe 
 
-testall : testM testT WordsTesting Save AllInclude testO clean
+testall : testM testT  PROG testO clean
 
 testM :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/main.cpp
 
 testT :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/testall.cpp
-
-WordsTesting : 
-	$(CC) $(CPPFLAGS) $(TEST)/Words.cpp
 
 testO :
 	$(CC) $(OBJ_TEST) $(TEST_FLAG) -o $(TEST)/test.exe
