@@ -6,14 +6,14 @@ int Menu()
 {
     int n = 0;
     system("clear");
-    cout << "        Enter 'Exit' or 'exit' to quit" << endl;
-    cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu" << endl;
-    cout << "  Enter 'Save' or 'save' to save your progress" << endl;
-    cout << "  Enter 'Progress' or 'progress' to see your progress" << endl;
-    cout << "  Enter 'Now' or 'now' to see your last score" << endl;
+    cout << "        Enter 'Exit' or 'exit' to quit\n";
+    cout << "  Enter 'ExitMenu' or 'exitmenu' to quit in menu\n" << endl;
+    cout << "  Enter 'Save' or 'save' to save your progress\n";
+    cout << "  Enter 'Progress' or 'progress' to see your progress\n";
+    cout << "  Enter 'Now' or 'now' to see your last score\n";
     system("figlet VerbsChecker");
     cout << "                                         ver. pre release 01";
-    cout << endl << "        Enter Mode: All or Random or Continue" << endl;
+    cout << "\n        Enter Mode: All or Random or Continue\n";
     while (n == 0) {
         string Choose;
         cin >> Choose;
@@ -59,7 +59,7 @@ int Menu()
             && Choose != "Tab" && Choose != "tab") {
             system("clear");
             system("figlet VerbsChecker");
-            cout << "                  Enter Mode: All or Random" << endl;
+            cout << "                  Enter Mode: All or Random\n";
         }
     }
     return 0;
