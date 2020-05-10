@@ -77,4 +77,4 @@ testO :
 clean :
 	rm -rf *.o
 
-.PHONY : testall clean
+.PHONY : clean
