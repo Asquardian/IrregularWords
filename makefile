@@ -4,7 +4,7 @@ CPPFLAGS=-Wall -Werror -Wextra -c
 
 OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o Check.o
 
-OBJ_TEST=main.o Words.o Save.o AllIncludeMode.o
+OBJ_TEST=main.o testall.o Words.o Save.o AllIncludeMode.o
 
 SRC=./src
 
@@ -58,12 +58,15 @@ Check :
 	$(CC) $(CPPFLAGS) $(SRC)/Check.cpp
 
 Verbs :
-	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe
+	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe 
 
-testall : testM WordsTesting Save AllInclude testO clean
+testall : testM testT WordsTesting Save AllInclude testO clean
 
 testM :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/main.cpp
+
+testT :
+	$(CC) $(CPPTEST_FLAGS) $(TEST)/testall.cpp
 
 WordsTesting : 
 	$(CC) $(CPPFLAGS) $(TEST)/Words.cpp
