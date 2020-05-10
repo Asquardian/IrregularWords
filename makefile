@@ -4,7 +4,7 @@ CPPFLAGS=-Wall -Werror -Wextra -c
 
 OBJ=main.o menu.o Checker.o Words.o AllIncludeMode.o RandomMode.o Save.o Now.o Progress.o Continue.o Check.o
 
-OBJ_TEST=main.o testall.o Words.o Save.o AllIncludeMode.o
+OBJ_TEST=main.o testall.o
 
 SRC=./src
 
@@ -69,7 +69,7 @@ testT :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/testall.cpp
 
 testO :
-	$(CC) $(OBJ_TEST) $(TEST_FLAG) -o $(TEST)/test.exe
+	$(CC) $(OBJ_TEST) $(OBJ) $(TEST_FLAG) -o $(TEST)/test.exe
 
 clean :
 	rm -rf *.o
