@@ -1,5 +1,5 @@
 #include "../src/functions.h"
-string Words(int Form)
+std::string Words(int Form)
 {
     const int len = 370, all = 1;
     const char end = '\n';
@@ -11,7 +11,7 @@ string Words(int Form)
     if (Form % 3 == 0) {
         return "0";
     } else {
-        string OUTPUT = word[Form];
+        std::string OUTPUT = word[Form];
         return OUTPUT;
     }
 }
