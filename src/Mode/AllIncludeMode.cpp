@@ -4,7 +4,7 @@ using namespace std;
 
 int Mode1(int i)
 {
-    if (i > 2.5 && i <353.5) {
+    if (i > 2.5 && i < 353.5) {
         while (i < 353.5) {
             if (i % 3 == 0) {
                 cout << "\n\n\n\n";
