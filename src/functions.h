@@ -1,6 +1,7 @@
 #include <cstring>
 #include <fstream>
 #include <iostream>
+#include <stdlib.h>
 
 int Menu();
 int Mode1(int i);
