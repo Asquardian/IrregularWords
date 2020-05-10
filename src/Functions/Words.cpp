@@ -13,7 +13,7 @@ string Words(int Form)
         return "0";
     } else {
         string OUTPUT = word[Form];
-        //Checker(OUTPUT);
+        // Checker(OUTPUT);
         return OUTPUT;
     }
 }
