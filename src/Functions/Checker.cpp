@@ -1,4 +1,7 @@
 #include "../functions.h"
+
+using namespace std;
+
 void Checker(string OUTPUT)
 {
     string INPUT;

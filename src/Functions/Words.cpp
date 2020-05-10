@@ -1,4 +1,7 @@
 #include "../functions.h"
+
+using namespace std;
+
 string Words(int Form)
 {
     const int len = 370, all = 1;
@@ -13,7 +16,7 @@ string Words(int Form)
         return "0";
     } else {
         string OUTPUT = word[Form];
-        // Checker(OUTPUT);
+        Checker(OUTPUT);
         return OUTPUT;
     }
 }

@@ -1,5 +1,7 @@
 #include "../functions.h"
 
+using namespace std;
+
 void Continue()
 {
     ifstream cont("continue.forge");

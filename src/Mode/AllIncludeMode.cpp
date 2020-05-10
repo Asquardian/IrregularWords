@@ -1,5 +1,7 @@
 #include "../functions.h"
 
+using namespace std;
+
 int Mode1(int i)
 {
     if (i > 2.5 && i < 353.5) {

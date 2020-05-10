@@ -1,5 +1,7 @@
 #include "../functions.h"
 
+using namespace std;
+
 void Progress()
 {
     const int len = 50, all = 2;
