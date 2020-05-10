@@ -60,7 +60,7 @@ Check :
 Verbs :
 	$(CC) $(OBJ) -o $(BIN)/VerbsChecker.exe 
 
-testall : testM testT  PROG testO clean
+testall : PROG testM testT testO clean
 
 testM :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/main.cpp
