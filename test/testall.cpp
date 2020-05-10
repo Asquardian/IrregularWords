@@ -27,5 +27,5 @@ TEST(ModeTest, Mintest)
 }
 TEST(ModeTest, OutRange)
 {
-    EXPECT_EQ(All(354), 0); //354 -number of words
+    EXPECT_EQ(All(354), 0); // 354 -number of words
 }

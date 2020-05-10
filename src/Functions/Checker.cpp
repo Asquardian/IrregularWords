@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Checker(string &Output)
+void Checker(string& Output)
 {
     string Input;
     int j = 0;

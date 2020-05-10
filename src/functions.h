@@ -7,7 +7,7 @@ int Menu();
 int All(int i);
 int Random();
 std::string Words(int Form);
-void Checker(std::string &Output);
+void Checker(std::string& Output);
 std::string Save(int Num, std::string Name);
 void Continue();
 void Progress();
