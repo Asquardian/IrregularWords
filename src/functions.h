@@ -1,3 +1,5 @@
+#ifndef H_FUNCTIONS
+#define H_FUNCTIONS
 #include <cstring>
 #include <fstream>
 #include <iostream>
@@ -15,3 +17,5 @@ void Continue();
 void Progress();
 void Now();
 void Check();
+
+#endif
