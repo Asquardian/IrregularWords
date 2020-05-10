@@ -14,6 +14,10 @@ TEST=./test
 
 GOOGLE_TEST_LIB = gtest
 
+GOOGLE_TEST_INCLUDE = /usr/local/include
+
+CPPTEST_FLAGS = -c -Wall -I $(GOOGLE_TEST_INCLUDE)
+
 TEST_FLAG = -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread
 
 all : PROG clean
@@ -59,7 +63,7 @@ Verbs :
 testall : testM WordsTesting Save AllInclude testO clean
 
 testM :
-	$(CC) $(CPPFLAGS) $(TEST)/main.cpp
+	$(CC) $(CPPTEST_FLAGS) $(TEST)/main.cpp
 
 WordsTesting : 
 	$(CC) $(CPPFLAGS) $(TEST)/Words.cpp
