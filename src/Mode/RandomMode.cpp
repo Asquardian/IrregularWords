@@ -1,4 +1,7 @@
 #include "../functions.h"
+#include <fstream>
+#include <stdlib.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -12,7 +15,7 @@ int Mode2()
         while (i % 3 != 0) {
             i++;
         }
-        while (z < 3) {
+        while (z < 3) { // Begin of words
             if (i % 3 == 0) {
                 sleep(1);
                 system("clear");

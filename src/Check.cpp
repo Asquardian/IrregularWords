@@ -1,4 +1,5 @@
 #include "functions.h"
+#include <fstream>
 
 using namespace std;
 

@@ -1,10 +1,10 @@
 #include "../functions.h"
+#include <fstream>
 
 using namespace std;
 
 string Save(int Num, string Name)
 {
-    cout << "Spaces will not count \nEnter your name: ";
     int j;
     ifstream outs, load;
     ofstream save, allnamein;
@@ -14,7 +14,7 @@ string Save(int Num, string Name)
         return "0";
     }
     if (Num < 2.5 && Num >= 1) {
-        allnamein.open("NumName.forge");
+        allnamein.open("NumName.forge"); //
         cout << " Saving... " << endl;
         outs.open("stat.forge");
         outs >> j;
@@ -32,11 +32,11 @@ string Save(int Num, string Name)
         allnamein << Num;
         allnamein.close();
         save.close();
-        cout << "Saving complete" << endl;
+        cout << "Saving complete\n";
         return "SaveSuccess";
     } else {
-        cout << "\nNot enough space for save" << endl;
-        cout << "Clear all data y/n" << endl;
+        cout << "\nNot enough space for save\n";
+        cout << "Clear all data y/n\n";
         string rewrite;
         cin >> rewrite;
         if (rewrite == "y") {
@@ -47,9 +47,9 @@ string Save(int Num, string Name)
             clear << "No Data";
             clear.close();
             rest.close();
-            cout << "Cleared\nSave again" << endl;
+            cout << "Cleared\nSave again\n";
         } else
-            cout << "Cancel" << endl;
+            cout << "Cancel\n";
         return "SaveNotComplete";
     }
 }

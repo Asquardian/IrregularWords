@@ -1,4 +1,5 @@
 #include "../functions.h"
+#include <fstream>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ string Words(int Form)
         file.getline(word[Form], len - 1, end);
     }
     if (Form % 3 == 0) {
-        cout << word[Form] << endl;
+        cout << word[Form] << "\n";
         return "0";
     } else {
         string OUTPUT = word[Form];

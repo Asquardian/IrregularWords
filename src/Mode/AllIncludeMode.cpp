@@ -1,4 +1,7 @@
 #include "../functions.h"
+#include <fstream>
+#include <stdlib.h>
+#include <unistd.h>
 
 using namespace std;
 

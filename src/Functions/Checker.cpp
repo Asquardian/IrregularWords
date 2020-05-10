@@ -1,8 +1,9 @@
 #include "../functions.h"
+#include <fstream>
 
 using namespace std;
 
-void Checker(string OUTPUT)
+void Checker(string &OUTPUT)
 {
     string INPUT;
     int j = 0;
