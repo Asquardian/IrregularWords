@@ -123,4 +123,3 @@ TEST(ModeTest, OutRange)
 {
     EXPECT_EQ(Mode1(354), 0);
 }
-
