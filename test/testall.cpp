@@ -1,6 +1,6 @@
+#include "../src/functions.h"
 #include <gtest/gtest.h>
 #include <cstring>
-#include "../src/functions.h"
 
 using namespace std;
 
