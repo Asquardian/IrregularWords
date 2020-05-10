@@ -21,23 +21,23 @@ int Menu()
         string Choose;
         cin >> Choose;
         if (Choose == "All" || Choose == "all") {
-            ofstream OUT("stat.forge");
-            OUT << 0;
-            Mode1(3);
+            ofstream Out("stat.forge");
+            Out << 0;
+            All(3);
         }
         if (Choose == "Continue" || Choose == "continue") {
             Continue();
         }
         if (Choose == "Random" || Choose == "random") {
-            ofstream OUT("stat.forge");
-            OUT << 0;
-            Mode2();
+            ofstream Out("stat.forge");
+            Out << 0;
+            Random();
         }
         if (Choose == "Save" || Choose == "save") {
-            int Num;
-            ifstream allnameout;
-            allnameout.open("NumName.forge");
-            allnameout >> Num;
+            int Num; // Not free save slots
+            ifstream Allnameout;
+            Allnameout.open("NumName.forge");
+            Allnameout >> Num;
             cout << "Spaces will not count \nEnter your name: ";
             char Name[46];
             cin >> Name;
@@ -46,7 +46,7 @@ int Menu()
                 cin >> Name;
             }
             Save(Num, Name);
-            allnameout.open("NumName.forge");
+            Allnameout.open("NumName.forge");
         }
         if (Choose == "Progress" || Choose == "progress") {
             Progress();

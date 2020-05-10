@@ -5,11 +5,11 @@ using namespace std;
 
 void Continue()
 {
-    ifstream cont("continue.forge");
+    ifstream Cont("continue.forge");
     int i;
-    cont >> i;
+    Cont >> i;
     while (i % 3 != 0)
         i--;
-    cont.close();
-    Mode1(i);
+    Cont.close();
+    All(i);
 }

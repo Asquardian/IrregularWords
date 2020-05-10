@@ -5,29 +5,29 @@ using namespace std;
 
 void Check()
 {
-    ifstream Num, cont, irregular, score, stat;
+    ifstream Num, Cont, Irregular, Score, Stat;
     Num.open("NumName.forge");
-    cont.open("continue.forge");
-    irregular.open("irregular.forge");
-    score.open("score.forge");
-    stat.open("stat.forge");
+    Cont.open("continue.forge");
+    Irregular.open("irregular.forge");
+    Score.open("score.forge");
+    Stat.open("stat.forge");
     if (!(Num.is_open())) {
         cout << "Error: NumName.forge not found \n";
         exit(0);
     }
-    if (!(cont.is_open())) {
+    if (!(Cont.is_open())) {
         cout << "Error: continue.forge not found  \n";
         exit(0);
     }
-    if (!(irregular.is_open())) {
+    if (!(Irregular.is_open())) {
         cout << "Error: irregular.forge not found  \n";
         exit(0);
     }
-    if (!(score.is_open())) {
+    if (!(Score.is_open())) {
         cout << "Error: score.forge not found  \n";
         exit(0);
     }
-    if (!(stat.is_open())) {
+    if (!(Stat.is_open())) {
         cout << "Error: stat.forge not found  \n";
         exit(0);
     }

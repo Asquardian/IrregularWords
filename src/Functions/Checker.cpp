@@ -3,26 +3,26 @@
 
 using namespace std;
 
-void Checker(string &OUTPUT)
+void Checker(string &Output)
 {
-    string INPUT;
+    string Input;
     int j = 0;
-    ifstream IN;
-    ofstream OUT;
+    ifstream In;
+    ofstream Out;
     cout << "Enter a word: ";
-    cin >> INPUT;
-    if (INPUT == "Exit" || INPUT == "exit") {
+    cin >> Input;
+    if (Input == "Exit" || Input == "exit") {
         exit(0);
     }
-    if (INPUT == "ExitMenu" || INPUT == "exitmenu")
+    if (Input == "ExitMenu" || Input == "exitmenu")
         Menu();
-    if (INPUT == OUTPUT) {
+    if (Input == Output) {
         cout << "Correct \n";
-        IN.open("stat.forge");
-        IN >> j;
+        In.open("stat.forge");
+        In >> j;
         j++;
-        OUT.open("stat.forge");
-        OUT << j;
+        Out.open("stat.forge");
+        Out << j;
     } else
         cout << "You made a mistake\n";
 }

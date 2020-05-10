@@ -4,11 +4,10 @@
 #include <iostream>
 
 int Menu();
-int Mode1(int i);
-int Mode2();
-int Mode3();
+int All(int i);
+int Random();
 std::string Words(int Form);
-void Checker(std::string &OUTPUT);
+void Checker(std::string &Output);
 std::string Save(int Num, std::string Name);
 void Continue();
 void Progress();

@@ -5,19 +5,19 @@ using namespace std;
 
 string Words(int Form)
 {
-    const int len = 370, all = 1;
-    const char end = '\n';
-    char word[len][all];
-    ifstream file("irregular.forge", ifstream::binary);
+    const int Len = 370, All = 1;
+    const char End = '\n';
+    char Word[Len][All];
+    ifstream File("irregular.forge", ifstream::binary);
     for (int r = 0; r != Form; r++) {
-        file.getline(word[Form], len - 1, end);
+        File.getline(Word[Form], Len - 1, End);
     }
     if (Form % 3 == 0) {
-        cout << word[Form] << "\n";
+        cout << Word[Form] << "\n";
         return "0";
     } else {
-        string OUTPUT = word[Form];
-        Checker(OUTPUT);
-        return OUTPUT;
+        string Output = Word[Form];
+        Checker(Output);
+        return Output;
     }
 }

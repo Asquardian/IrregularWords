@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int Mode1(int i)
+int All(int i)
 {
     if (i > 2.5 && i < 353.5) {
         while (i < 353.5) {

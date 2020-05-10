@@ -5,11 +5,11 @@
 
 using namespace std;
 
-int Mode2()
+int Random()
 {
     int i, z = 0, n = 0;
-    ofstream OUT("stat.forge");
-    OUT << 0;
+    ofstream Out("stat.forge");
+    Out << 0;
     while (n < 12.5) { // Cycle time
         i = rand() % 351; // 353 (all words) - 2 (Forms)
         while (i % 3 != 0) {
