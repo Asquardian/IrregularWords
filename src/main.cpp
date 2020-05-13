@@ -1,8 +1,7 @@
 #include "functions.h"
 
-int main()
-{
-    Check();
-    Menu();
-    return 0;
+int main() {
+  Check();
+  Menu();
+  return 0;
 }
