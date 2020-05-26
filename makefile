@@ -26,7 +26,7 @@ all :
 	cd $(BIN); ./VerbsChecker.exe
 
 runtest : 
-	cd $(TEST); ./test.exe
+	cd $(BIN); ./test.exe
 
 PROG : Menu Checker Words AllInclude Random Save Progress Now Continue Check
 
@@ -77,13 +77,13 @@ testT :
 	$(CC) $(CPPTEST_FLAGS) $(TEST)/testall.cpp -o $(BUILD)/testall.o
 
 testO :
-	$(CC) $(OBJ_TEST) $(OBJ) $(TEST_FLAG) $(TEST)/test.exe
+	$(CC) $(OBJ_TEST) $(OBJ) $(TEST_FLAG) $(BIN)/test.exe
 
 clean :
 	rm -rf $(BUILD)/*.o
 
 unistall:
 	rm -rf $(BIN)/VerbsChecker.exe
-	rm -rf $(TEST)/test.exe
+	rm -rf $(BIN)/test.exe
 
 .PHONY : clean
