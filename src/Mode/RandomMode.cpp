@@ -20,7 +20,8 @@ int Random() {
         system("clear");
         cout << "Word is ";
       }
-      Words(i);
+      string Output = Words(i);
+      Checker(Output);
       i++;
       z++;
     }
