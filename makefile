@@ -80,6 +80,10 @@ testO :
 	$(CC) $(OBJ_TEST) $(OBJ) $(TEST_FLAG) $(TEST)/test.exe
 
 clean :
-	cd $(BUILD); rm -rf *.o
+	rm -rf $(BUILD)/*.o
+
+unistall:
+	rm -rf $(BIN)/VerbsChecker.exe
+	rm -rf $(TEST)/test.exe
 
 .PHONY : clean
