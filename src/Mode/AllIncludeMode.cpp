@@ -17,7 +17,8 @@ int All(int i) {
         cout << "PP V3 ";
       if (i % 3 == 1)
         cout << "PS V2 ";
-      Words(i);
+      string Output = Words(i);
+      Checker(Output);
       if (i == 3)
         cout << "Enter like Singular/Plural\n";
       i++;

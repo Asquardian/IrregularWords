@@ -13,10 +13,8 @@ string Words(int Form) {
   }
   if (Form % 3 == 0) {
     cout << Word[Form] << "\n";
-    return "0";
+    return Word[Form];
   } else {
-    string Output = Word[Form];
-    Checker(Output);
-    return Output;
+    return Word[Form];
   }
 }
