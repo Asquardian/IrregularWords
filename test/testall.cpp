@@ -4,8 +4,9 @@
 
 using namespace std;
 
-TEST(WordsTest, MinTest) { EXPECT_EQ(Words(3), "0"); }
-TEST(WordsTest, FromZero) { EXPECT_EQ(Words(0), "0"); }
+TEST(WordsTest, MinTest) { EXPECT_EQ(Words(3), "Be"); }
+TEST(WordsTest, MaxTest) { EXPECT_EQ(Words(353), "Written"); }
+TEST(WordsTest, OutRangeTest) { EXPECT_EQ(Words(354), ""); }
 TEST(Save, Success) {
   EXPECT_EQ(Save(1, "Name"), "SaveSuccess");
   EXPECT_EQ(Save(1, "Name"), "SaveSuccess");
