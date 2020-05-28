@@ -5,28 +5,30 @@
 
 using namespace std;
 
-int Random() {
-  int i, z = 0, n = 0;
-  ofstream Out("stat.forge");
-  Out << 0;
-  while (n < 12.5) {  // Cycle time
-    i = rand() % 351; // 353 (all words) - 2 (Forms)
-    while (i % 3 != 0) {
-      i++;
+int Random()
+{
+    int i, z = 0, n = 0;
+    ofstream Out("stat.forge");
+    Out << 0;
+    while (n < 12.5) {    // Cycle time
+        i = rand() % 351; // 353 (all words) - 2 (Forms)
+        while (i % 3 != 0) {
+            i++;
+        }
+        while (z < 3) { // Begin of words
+            if (i % 3 == 0) {
+                sleep(1);
+                system("clear");
+                cout << "Word is ";
+            }
+            string Output = Words(i);
+            if (i % 3 != 0)
+                Checker(Output);
+            i++;
+            z++;
+        }
+        n++;
+        z = 0;
     }
-    while (z < 3) { // Begin of words
-      if (i % 3 == 0) {
-        sleep(1);
-        system("clear");
-        cout << "Word is ";
-      }
-      string Output = Words(i);
-      Checker(Output);
-      i++;
-      z++;
-    }
-    n++;
-    z = 0;
-  }
-  return 0;
+    return 0;
 }
