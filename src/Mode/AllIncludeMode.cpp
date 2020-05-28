@@ -12,15 +12,21 @@ int All(int i) {
         sleep(1);
         system("clear");
         cout << "Word is ";
+        string Output = Words(i);
       }
-      if (i % 3 == 2)
-        cout << "PP V3 ";
-      if (i % 3 == 1)
-        cout << "PS V2 ";
-      string Output = Words(i);
-      Checker(Output);
       if (i == 3)
         cout << "Enter like Singular/Plural\n";
+      if (i % 3 == 2) {
+        cout << "PP V3 ";
+        string Output = Words(i);
+        Checker(Output);
+      }
+      if (i % 3 == 1) {
+        cout << "PS V2 ";
+        string Output = Words(i);
+        Checker(Output);
+      }
+
       i++;
       ofstream cont("continue.forge");
       cont << i;
