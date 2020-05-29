@@ -5,7 +5,7 @@ using namespace std;
 
 string Save(int Num, string Name) {
   int j;
-  ifstream Outs, Load;
+  ifstream Outs;
   ofstream Save, Allnamein;
   string PerRes;
   if (Num < 1) {
@@ -18,17 +18,9 @@ string Save(int Num, string Name) {
     Outs.open("stat.forge");
     Outs >> j;
     Outs.close();
-    Load.open("score.forge");
-    Load >> PerRes;
-    Save.open("score.forge");
-    if (Num == 1) {
+    Save.open("score.forge", ios::app);
+    if (Num < 10) {
       Save << Name << ":" << j;
-    }
-    if (Num == 2) {
-      Save << PerRes << "\n" << Name << ":" << j;
-    }
-    Num++;
-    Allnamein << Num;
     Allnamein.close();
     Save.close();
     cout << "Saving complete\n";
@@ -51,4 +43,6 @@ string Save(int Num, string Name) {
       cout << "Cancel\n";
     return "SaveNotComplete";
   }
+}
+return "SaveError";
 }
