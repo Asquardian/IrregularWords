@@ -8,7 +8,7 @@ int All(int i);
 int Random();
 std::string Words(int Form);
 void Checker(std::string &Output);
-std::string Save(int Num, std::string Name);
+std::string Save(std::string Name);
 void Continue();
 void Progress();
 void Now();

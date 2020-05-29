@@ -33,19 +33,15 @@ int Menu() {
       Random();
     }
     if (Choose == "Save" || Choose == "save") {
-      int Num; // Not free save slots
-      ifstream Allnameout;
-      Allnameout.open("NumName.forge");
-      Allnameout >> Num;
       cout << "Spaces will not count \nEnter your name: ";
       char Name[46];
       cin >> Name;
+     // int Num = 1;
       while (strlen(Name) > 46) {
         cout << "Number of characters is more than 46";
         cin >> Name;
       }
-      Save(Num, Name);
-      Allnameout.open("NumName.forge");
+      Save(Name);
     }
     if (Choose == "Progress" || Choose == "progress") {
       Progress();
