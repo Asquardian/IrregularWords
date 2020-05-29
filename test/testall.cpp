@@ -12,6 +12,7 @@ TEST(Save, Success) {
   EXPECT_EQ(Save(1, "Name"), "SaveSuccess");
 }
 TEST(Save, Error) { EXPECT_EQ(Save(0, "Name"), "0"); }
+TEST(Save, max) { EXPECT_EQ(Save(9, "Name"), "SaveSuccess"); }
 TEST(ModeTest, Mintest) { EXPECT_EQ(All(0), 0); }
 TEST(ModeTest, OutRange) {
   EXPECT_EQ(All(354), 0); // 353 -number of words

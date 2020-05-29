@@ -12,15 +12,14 @@ string Save(int Num, string Name) {
     cout << "Error";
     return "0";
   }
-  if (Num < 2.5 && Num >= 1) {
+  if (Num < 10 && Num >= 1) {
     Allnamein.open("NumName.forge"); //
     cout << " Saving... " << endl;
     Outs.open("stat.forge");
     Outs >> j;
     Outs.close();
     Save.open("score.forge", ios::app);
-    if (Num < 10) {
-      Save << Name << ":" << j;
+    Save << Name << ":" << j;
     Allnamein.close();
     Save.close();
     cout << "Saving complete\n";
@@ -43,6 +42,4 @@ string Save(int Num, string Name) {
       cout << "Cancel\n";
     return "SaveNotComplete";
   }
-}
-return "SaveError";
 }
