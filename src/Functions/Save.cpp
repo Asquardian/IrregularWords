@@ -12,7 +12,7 @@ string Save(string Name) {
   Outs >> j;
   Outs.close();
   Save.open("score.forge", ios::app);
-  Save << Name << ":" << j;
+  Save << Name << ":" << j << "\n";
   Save.close();
   cout << "Saving complete\n";
   return "SaveSuccess";
