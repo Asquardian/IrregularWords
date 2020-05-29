@@ -36,7 +36,6 @@ int Menu() {
       cout << "Spaces will not count \nEnter your name: ";
       char Name[46];
       cin >> Name;
-     // int Num = 1;
       while (strlen(Name) > 46) {
         cout << "Number of characters is more than 46";
         cin >> Name;
