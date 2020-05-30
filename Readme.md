@@ -9,11 +9,11 @@ $ sudo apt-get install figlet
 For CentOS, RHEL, Fedora and etc:
 $ yum install figlet
 
-Use "make" to make programm
+Use "make Build" to make programm
 
 Programm will be in "bin" directory
 
-Use "make Test" to make a test
+Use "make check" to make a test
 
 Use ./VerbsChecker.exe to start
 
