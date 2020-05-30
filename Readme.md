@@ -1,4 +1,4 @@
-VerbsChecker Pre-release v 0.1
+VerbsChecker Pre-release v 1.1
 
 For Working needs FIGlet
 You can get it in Terminal
@@ -25,7 +25,7 @@ You should to write all words in AllInclude, Continue and Random modes from a ca
 
 By command Now you can check your current score
 
-By command Progress your can see your score, saved with Save. It has a 2 slots, and you can't change it. Also you need to clean your progress after 2 times.
+By command Progress your can see your score, saved with Save.
 
 You can exit in menu with ExitMenu command
 
